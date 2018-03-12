@@ -14,10 +14,11 @@ JavaScript 中的对象都有一个特殊的 **[[Prototype]]内置** 属性.(`__
 
 ##### '类'
 > 所有的 **函数** 默认都会拥有一个名为 prototype 的公有并且不可枚举的属性,它会指向另一个对象.
-> ```js
-> function Foo() { }
+
+```js
+function Foo() { }
 Foo.prototype;    // { }
-> ```
+```
 > **这个对象通常被称为 Foo 的原型**.
 
 ```js
