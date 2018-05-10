@@ -9,11 +9,11 @@
 显示补丁
 `git log -p filename` 查看单个文件在历次提交中的详细变更
 
-#### ==git log --stat==
+#### **git log --stat**
 显示 在每个提交(commit)中有哪些文件被修改了, 这些文件分别添加或删除了多少行内容.
 
 ---
-#### ==git blame [fileName]==
+#### **git blame [fileName]**
 文件的每一行的详细修改信息:包括SHA串,日期和作者(甩锅必备)
 
 #### git blame -L 40,+10 [fileName]
@@ -27,7 +27,7 @@
 #### git diff
 显示当前你所有已做的但没有加入到暂存区里的修改
 
-#### ==git diff --cached==
+#### **git diff --cached**
 哪些文件将被提交(commit)
 
 #### git diff branch2
@@ -68,7 +68,7 @@ xargs 的作用是将参数列表转换成小块分段传递给其他命令
 ```
 
 ---
-#### ==合并多个commit提交==
+#### **合并多个commit提交**
 - git rebase -i [在此之前做合并的commit号(不包括)] 或 git rebase -i HEAD~2 合并最后两个
 - 修改为squash 把它与前一提交合并(除了第一行外的其他行,都把pick修改为squash)
 - 输入新的commit信息,done!
@@ -79,7 +79,7 @@ xargs 的作用是将参数列表转换成小块分段传递给其他命令
 #### git show [commit hash]
 显示某次提交的内容变化
 
-#### ==git commit --amend==
+#### **git commit --amend**
 场景:进行一次提交后,突然意识到某文件有一个`debugger`没有删掉.
 解决方案:
 1.修复问题,重新提交一次,附上必要的描述信息,结果是多出一条commit信息.
@@ -102,7 +102,10 @@ xargs 的作用是将参数列表转换成小块分段传递给其他命令
 让这个文件回到最近一次git commit或git add时的状态。
 `git checkout readme.txt`也是可以的
 
-#### ==git reset HEAD readme.txt==
+#### **git reset HEAD readme.txt**
 把暂存区的修改撤销掉（unstage），重新放回工作区
+
+#### **git checkout -**
+切换到最近使用过的分支
 
 ---
