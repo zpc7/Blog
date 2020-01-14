@@ -7,3 +7,4 @@ PC的个人博客
 ### 技能点
 - [千位分隔符的思考](./SkillPoints/千位分隔符.md)
 - [GitTips Vol 1](./SkillPoints/GitTips-Vol-1.md)
+- [Linux中的cp命令](./SkillPoints/Linux-cp.md)
