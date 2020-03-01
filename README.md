@@ -9,3 +9,4 @@ PC的个人博客
 - [GitTips Vol 1](./SkillPoints/GitTips-Vol-1.md)
 - [Linux中的cp命令](./SkillPoints/Linux-cp.md)
 - [React PureComponent 和 memo](./SkillPoints/React-PureComponent+memo.md)
+- [React useCallback 和 useMemo](./SkillPoints/React-useCallback+useMemo.md)
