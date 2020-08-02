@@ -10,3 +10,4 @@ PC的个人博客
 - [Linux中的cp命令](./SkillPoints/Linux-cp.md)
 - [React PureComponent 和 memo](./SkillPoints/React-PureComponent+memo.md)
 - [React useCallback 和 useMemo](./SkillPoints/React-useCallback+useMemo.md)
+- [TypeScript 类型深入](./SkillPoints/TypeScript类型深入.md)
