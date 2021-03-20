@@ -29,6 +29,7 @@ PC的个人博客
   - [更改远程仓库的 URL](https://docs.github.com/cn/github/using-git/changing-a-remotes-url)
   - [忽略文件(仅为本机设置忽略?)](https://docs.github.com/cn/github/using-git/ignoring-files)
   - [创建有多个作者的提交](https://docs.github.com/cn/github/committing-changes-to-your-project/creating-a-commit-with-multiple-authors)
+  - [本机配置多个git账号(公司/个人)](https://blog.csdn.net/weixin_30389003/article/details/96460375)
 + 在线工具
   - [pdf合并/格式处理](https://smallpdf.com/cn)
   - [颜色搭配](https://colorhunt.co/)
