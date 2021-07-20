@@ -16,7 +16,8 @@ PC的个人博客
 - [React PureComponent 和 memo](./SkillPoints/React-PureComponent+memo.md)
 - [React useCallback 和 useMemo](./SkillPoints/React-useCallback+useMemo.md)
 - [TypeScript 类型深入](./SkillPoints/TypeScript类型深入.md)
-- [JS跳出循环](./SkillPoints/Out-of-the-Loop.md)
+- [JS 跳出循环](./SkillPoints/Out-of-the-Loop.md)
+- [CSS 居中](./SkillPoints/CSS-center.md)
 
 ---
 
