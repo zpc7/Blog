@@ -19,6 +19,8 @@ PC的个人博客
 - [JS 跳出循环](./SkillPoints/Out-of-the-Loop.md)
 - [CSS 居中](./SkillPoints/CSS-center.md)
 
+### 翻译
+- [使用 `React.lazy` 和 `@loadable/component` 在 `React` 中拆分代码](./Translation/React.lazy+Suspense.md)
 ---
 
 ### Link
