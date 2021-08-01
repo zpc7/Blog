@@ -18,6 +18,7 @@ PC的个人博客
 - [TypeScript 类型深入](./SkillPoints/TypeScript类型深入.md)
 - [JS 跳出循环](./SkillPoints/Out-of-the-Loop.md)
 - [CSS 居中](./SkillPoints/CSS-center.md)
+- [基于 node 制作命令行工具](./SkillPoints/Node-cli-tool.md)
 
 ### 翻译
 - [使用 `React.lazy` 和 `@loadable/component` 在 `React` 中拆分代码](./Translation/React.lazy+Suspense.md)
