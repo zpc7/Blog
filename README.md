@@ -40,7 +40,10 @@ PC的个人博客
   - [颜色搭配](https://colorhunt.co/)
   - [文件对比](https://differ.netlify.app/)
   - [TS转JS](https://www.typescriptlang.org/play)
-  - [Create beautiful images of your code](https://ray.so/)
+  - 将代码片段转为图片分享
+    + [RaySo](https://ray.so/)
+    + [CodePng](https://www.codepng.app/)
+    + [Carbon](https://carbon.now.sh/)
 + HTTP
   - [Referer](http://www.ruanyifeng.com/blog/2019/06/http-referer.html) 
 + 未分类
