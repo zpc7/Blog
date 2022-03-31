@@ -9,9 +9,9 @@
 ![](../Images/Skill/node-cli-1.png)
 
 对于 `node` 项目而言，模块导出入口文件由 `package.json` 中 `main` 字段决定，而如果是要安装到命令行的工具，则是由 `package.json` 中 `bin` 字段决定的。  
-修改 `packgge.json`, 添加 `bin` 字段: 
+修改 `package.json`, 添加 `bin` 字段: 
 ```json diff
-// pacgage.json
+// package.json
  "bin":{
    "my-node-cli": "bin/my-node-cli-script.js"
  },
@@ -68,6 +68,7 @@ npm config get prefix
 ```
 
 ![](../Images/Skill/node-cli-5.png)
+
 目前为止, 已经可以使用我们自定义的命令 `my-node-cli` 了, 但是只能输出一条文本, 让我们来加点料!
 
 ## 使用命令行库 `commander.js`
@@ -287,6 +288,9 @@ program
 - [跟着老司机玩转Node命令行](https://jelly.jd.com/article/6006b1045b6c6a01506c87b4)
 - [npm link的使用](https://www.jianshu.com/p/aaa7db89a5b2)
 - [npm Docs](https://docs.npmjs.com/cli/v7/configuring-npm/package-json#description)
+- [Node.js 命令行工具的编写](https://www.cnblogs.com/Wayou/p/build_nodejs_command_line.html)
+- [如何从零开始开发一个 node.js 命令行(cli)工具](https://www.chenliqiang.cn/post/node-js-cli-start-up.html)
+- [从零实现Node.js命令行工具](https://zhuanlan.zhihu.com/p/91338826)
 
 
 
