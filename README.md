@@ -11,7 +11,7 @@ PC的个人博客
 ### 技能点
 
 - [千位分隔符的思考](./SkillPoints/千位分隔符.md)
-- [GitTips Vol 1](./SkillPoints/GitTips-Vol-1.md)
+- [Git 操作小技巧](./SkillPoints/GitTips-Vol-1.md)
 - [Linux中的cp命令](./SkillPoints/Linux-cp.md)
 - [React PureComponent 和 memo](./SkillPoints/React-PureComponent+memo.md)
 - [React useCallback 和 useMemo](./SkillPoints/React-useCallback+useMemo.md)
@@ -22,12 +22,10 @@ PC的个人博客
 
 ### 翻译
 - [使用 `React.lazy` 和 `@loadable/component` 在 `React` 中拆分代码](./Translation/React.lazy+Suspense.md)
+
 ---
 
-### Link
-
-> 值得收藏或查阅的文章
-
+### 收藏推荐
 + Git/GitHub
   - [统一配置 Git 处理行结束符](https://docs.github.com/cn/github/using-git/configuring-git-to-handle-line-endings)
   - [为什么 Git 总是询问我的密码？](https://docs.github.com/cn/github/using-git/why-is-git-always-asking-for-my-password)
@@ -44,6 +42,8 @@ PC的个人博客
     + [RaySo](https://ray.so/)
     + [CodePng](https://www.codepng.app/)
     + [Carbon](https://carbon.now.sh/)
++ JS/TS
+  - [当 async/await 遇上 forEach](http://objcer.com/2017/10/12/async-await-with-forEach/)
 + HTTP
   - [Referer](http://www.ruanyifeng.com/blog/2019/06/http-referer.html) 
 + 未分类
