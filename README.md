@@ -75,7 +75,10 @@
       * [CodePng](https://www.codepng.app/)
       * [Carbon](https://carbon.now.sh/)
     </details>
-- 软件推荐
-  - [mac 免费滚动截屏 像素标记](https://shottr.cc/)
+- mac软件推荐
+  - [免费滚动截屏 像素标记 shottr](https://shottr.cc/)
+  - [桌面窗口管理 Rectangle](https://rectangleapp.com/)
+  - [GIF 录制 Gifox](https://gifox.io/)
+  - [按键可视化 KeyCastr](https://github.com/keycastr/keycastr)
 - 有趣的资源
   - [多邻国最新推出的免费粤语课程](https://zh-cn.duolingo.com/welcome?welcomeStep=choosePath)
