@@ -2,7 +2,7 @@
 使用  `node.js` 开发业务功能模块很常见, 得益于完善的社区, 他也可以用来快速开发命令行工具. 本文主要讲解大致的开发流程, 欢迎讨论.
 
 ## 初始化项目工程
-> 可在此处找到完整[示例](https://github.com/zpc7/snippets-and-demos/tree/main/public-demo/node-cli-test)
+> 可在此处找到完整[示例](https://github.com/zpc7/snippets-and-demos/tree/main/demos/node-cli-test)
 
 进入目录, 使用 `npm init -y` 快速初始化项目 `node-cli-test`
 
