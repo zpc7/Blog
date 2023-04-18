@@ -36,7 +36,7 @@
     <summary>Git/GitHub</summary>
 
     - [Git 命令在线提示](https://gitexplorer.com/)
-    - [本机配置多个 git 账号(公司/个人)](https://blog.csdn.net/weixin_30389003/article/details/96460375)
+    - [本机配置多个 git 账号(公司/个人)](https://www.cnblogs.com/zhangceblogs/p/8488384.html)
     - [统一配置 Git 处理行结束符](https://docs.github.com/cn/github/using-git/configuring-git-to-handle-line-endings)
     - [为什么 Git 总是询问我的密码？](https://docs.github.com/cn/github/using-git/why-is-git-always-asking-for-my-password)
     - [更改远程仓库的 URL](https://docs.github.com/cn/github/using-git/changing-a-remotes-url)
