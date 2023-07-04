@@ -48,6 +48,7 @@
   - [当 async/await 遇上 forEach](http://objcer.com/2017/10/12/async-await-with-forEach/)
 - CSS
   - [CSS手电筒](https://voussoir.net/writing/browser_in_the_dark)
+  - [浅谈CSS逻辑选择器 is、where、not、has](https://www.dongchuanmin.com/xhtml/2463.html)
 
 - React
   - [React技术揭秘](https://react.iamkasong.com/)
