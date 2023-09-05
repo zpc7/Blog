@@ -1,0 +1,12 @@
+{
+  "name": "zpc7-npm-package-test",
+  "version": "1.0.0",
+  "description": "zpc7的第一个npm package包测试",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

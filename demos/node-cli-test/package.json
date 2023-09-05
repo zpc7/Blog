@@ -1,0 +1,20 @@
+{
+  "name": "node-cli-test",
+  "version": "1.0.0",
+  "description": "演示基于 node 开发命令行工具的流程",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "my-node-cli": "./bin/my-node-cli-script.js"
+  },
+  "keywords": [],
+  "author": "zpc7",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.1.0",
+    "inquirer": "^8.1.2"
+  }
+}

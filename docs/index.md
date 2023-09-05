@@ -9,16 +9,19 @@ hero:
   name: "PC's Blog"
   text: "随便写写, 以便查阅"
   tagline: Just go
+  image:
+    src: /cover.png
+    alt: cover
   actions:
     - theme: brand
       text: Blog
-      link: /blog
+      link: /blog/
     - theme: alt
       text: snippets
-      link: /snippet
+      link: /snippet/
     - theme: alt
       text: demos
-      link: /demo
+      link: /demo/
 
 features:
   - title: 阮一峰的网络日志
@@ -29,4 +32,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-

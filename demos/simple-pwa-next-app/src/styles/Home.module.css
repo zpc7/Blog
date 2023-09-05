@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+.paragraph {
+  margin: 2rem 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.button {
+  background-color: #259409;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #259409;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
