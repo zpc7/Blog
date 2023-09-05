@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 import blogSidebar from './sidebar/blog';
 import snippetsSidebar from './sidebar/snippet';
+import demosSidebar from './sidebar/demo';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -18,6 +19,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Blog', link: '/blog/index' },
       { text: 'Snippet', link: '/snippets/index' },
+      { text: 'Demo', link: '/demos/mouse-hover' },
       {
         text: 'More',
         items: [
@@ -29,7 +31,8 @@ export default defineConfig({
 
     sidebar: {
       '/blog/': blogSidebar,
-      '/snippets/': snippetsSidebar
+      '/snippets/': snippetsSidebar,
+      '/demos/': demosSidebar
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/zpc7/Blog' }]
