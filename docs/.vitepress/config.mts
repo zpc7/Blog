@@ -6,8 +6,11 @@ import snippetsSidebar from './sidebar/snippet';
 export default defineConfig({
   title: 'PC Blog',
   description: 'A VitePress Site',
+  lastUpdated: true,
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/logo.png',
     search: {
       provider: 'local'
     },

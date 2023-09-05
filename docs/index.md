@@ -6,9 +6,9 @@ title: Blog
 titleTemplate: PC
 
 hero:
-  name: "PC's Blog"
+  name: PC
   text: "随便写写, 以便查阅"
-  tagline: Just go
+  tagline: 渡人先渡己 渡己先渡心 天若不渡 人需自渡
   image:
     src: /cover.png
     alt: cover
