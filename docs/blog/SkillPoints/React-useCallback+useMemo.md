@@ -1,4 +1,5 @@
 我们先用 `Hooks` 重写下 [PureComponent+memo](./React-PureComponent+memo.md) 中的例子:
+
 ```jsx
 import React, { useState, memo } from "react";
 
@@ -22,7 +23,9 @@ export default function Parents() {
   );
 }
 ```
+
 现在的子组件 `ChildWithMemo` 没有接收任何props, 我们简单改造下示例:  
+
 ```jsx
 const ChildWithMemo = memo(({ name, updateName }) => {
   console.log("MemoChild Render");
@@ -49,6 +52,7 @@ export default function Parents() {
     </div>
   );
 }
+
 ```
 当我们点击按钮给 count 加 1 的时候, 子组件 `ChildWithMemo` 并没有使用到 count ,但还是重新渲染了, 这是什么原因?
 
@@ -112,10 +116,12 @@ export default function Parents() {
   );
 }
 ```
+
 在这个例子中, 我们把 `ChildWithMemo` 的 props 由 string 的 `name` 变成了一个引用类型的 `profile = { name, age: 24 }` , 当我们点击按钮给 count 加 1 的时候, 子组件 `ChildWithMemo` 又开始重新渲染了!!!  这又是为什么呢?  
-原因就在于 每次父组件重新 render 的时候, 都生成了一个新的 对象 { name, age: 24 }  
+原因就在于 每次父组件重新 render 的时候, 都生成了一个新的 对象 `{ name, age: 24 }`  
 
 让我们用 `useMemo` 来优化:
+
 ```js
 - const profile = { name, age: 24 };
 + const profile = useMemo(() => ({ name, age: 24 }), [name])

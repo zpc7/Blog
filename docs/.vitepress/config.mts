@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import blogSidebar from './sidebar/blog';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,18 +12,12 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Blog', link: '/blog/index' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: {
+      '/blog/': blogSidebar
+    },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/zpc7/Blog' }]
   }
