@@ -1,18 +1,18 @@
-#### 原型
-##### [[Prototype]]
+# 你不知道的JS上-原型
+## [[Prototype]]
 JavaScript 中的对象都有一个特殊的 **[[Prototype]]内置** 属性.(`__proto__模拟`)
 
 **[[Prototype]]** 有什么作用?  
 当你试图引用对象的属性时会触发 [[Get]] 操作,比如 myObject.a。对于默认的 [[Get]] 操作来说,第一步是检查对象本身是否有这个属性,如果有的话就使用它,否则继续访问对象的 [[Prototype]] 链.
 
-###### 属性设置和屏蔽
+### 属性设置和屏蔽
 `myObject.foo = "bar"`  
 如果 foo 不直接存在于 myObject 中而是存在于原型链上层时 myObject.foo = "bar" 会出现三种情况:  
 1. 如果在[[Prototype]]链上层存在名为foo的普通数据访问属性并且没有被标记为只读(writable:false),那就会直接在 myObject 中添加一个名为 foo 的新属性,它是屏蔽属性。
 2. 如果在[[Prototype]]链上层存在foo,但是它被标记为只读(writable:false),那么 无法修改已有属性或者在 myObject 上创建屏蔽属性。如果运行在严格模式下,代码会抛出一个错误。否则,这条赋值语句会被忽略。总之,不会发生屏蔽。
 3. 如果在[[Prototype]]链上层存在foo并且它是一个setter,那就一定会 **调用** 这个 setter。foo 不会被添加到(或者说屏蔽于)myObject,也不会重新定义 foo 这 个 setter。
 
-##### '类'
+## '类'
 > 所有的 **函数** 默认都会拥有一个名为 prototype 的公有并且不可枚举的属性,它会指向另一个对象.
 
 ```js
@@ -29,7 +29,7 @@ Object.getPrototypeOf( a ) === Foo.prototype; // true
 ```
 调用new Foo()时会创建a(具体的4个步骤参见第2章),其中的一步就是给a一个内部的 [[Prototype]] 链接,关联到 Foo.prototype 指向的那个对象。
 
-##### (原型)继承
+## (原型)继承
 ```js
 function Foo(name) {
     this.name = name;
@@ -76,7 +76,7 @@ Bar.ptototype = Object.create( Foo.prototype );
 Object.setPrototypeOf( Bar.prototype, Foo.prototype );
 ```
 如果忽略掉 Object.create(..) 方法带来的轻微性能损失(抛弃的对象需要进行垃圾回收),它实际上比 ES6 及其之后的方法更短而且可读性更高。
-###### 检查“类”关系
+### 检查“类”关系
 > 内省/反射 :检查一个实例(JavaScript 中的对象)的继承祖先(JavaScript 中的委托关联)
 
 ```js
@@ -119,7 +119,7 @@ Object.defineProperty(Object.prototype, "__proto__", {
 });
 ```
 
-##### 对象关联
+## 对象关联
 **原型链:**
 > 如果在对象上没有找到需要的属性或者方法引用,引擎就会继续在 [[Prototype]] 关联的对象上进行查找。同理,如果在后者中也没有找到需要的 引擎就会继续查找它的 [[Prototype]],以此类推。这一系列对象的链接被称为“原型链”。
 

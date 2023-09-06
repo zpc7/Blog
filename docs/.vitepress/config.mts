@@ -5,8 +5,8 @@ import demosSidebar from './sidebar/demo';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'PC Blog',
-  description: 'A VitePress Site',
+  title: 'PC',
+  description: 'pc 用来记录琐碎的地方',
   lastUpdated: true,
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
@@ -15,6 +15,8 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
+    outline: 'deep',
+    // outlineTitle: '大纲',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Blog', link: '/blog/index' },

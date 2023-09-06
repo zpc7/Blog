@@ -2,13 +2,12 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-title: Blog
-titleTemplate: PC
+title: Home
 
 hero:
   name: PC
-  text: "随便写写, 以便查阅"
-  tagline: 渡人先渡己 渡己先渡心 天若不渡 人需自渡
+  text: '随便写写, 以便查阅'
+  tagline: 天若不渡 人需自渡
   image:
     src: /cover.png
     alt: cover
@@ -18,10 +17,10 @@ hero:
       link: /blog/
     - theme: alt
       text: snippets
-      link: /snippet/
+      link: /snippets/
     - theme: alt
       text: demos
-      link: /demo/
+      link: /demos/
 
 features:
   - title: 阮一峰的网络日志
@@ -32,6 +31,10 @@ features:
     title: Vercel Dashboard
     details: 快速构建部署前端静态应用
     link: https://vercel.com/dashboard
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 廖雪峰的官方网站
+    details: 基础教程
+    link: https://www.liaoxuefeng.com/
+  - title: RUNOOB
+    details: 菜鸟教程
+    link: https://www.runoob.com/
 ---
