@@ -9,7 +9,7 @@ hero:
   text: '随便写写, 以便查阅'
   tagline: 天若不渡 人需自渡
   image:
-    src: /cover.png
+    src: /home/cover.png
     alt: cover
   actions:
     - theme: brand
@@ -20,7 +20,7 @@ hero:
       link: /snippets/
     - theme: alt
       text: demos
-      link: /demos/
+      link: /demos/mouse-hover
 
 features:
   - title: 阮一峰的网络日志

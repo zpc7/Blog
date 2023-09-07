@@ -18,15 +18,15 @@ export default defineConfig({
     outline: 'deep',
     // outlineTitle: '大纲',
     nav: [
-      { text: 'Home', link: '/' },
+      // { text: 'Home', link: '/' },
       { text: 'Blog', link: '/blog/index' },
-      { text: 'Snippet', link: '/snippets/index' },
-      { text: 'Demo', link: '/demos/mouse-hover' },
+      { text: 'Snippets', link: '/snippets/index' },
+      { text: 'Demos', link: '/demos/mouse-hover' },
       {
         text: 'More',
         items: [
-          { text: 'api-examples', link: '/api-examples' },
-          { text: 'markdown-examples', link: '/markdown-examples' }
+          { text: 'api-examples', link: '/more/api-examples' },
+          { text: 'markdown-examples', link: '/more/markdown-examples' }
         ]
       }
     ],

@@ -3,5 +3,5 @@
 <MouseHover />
 
 <script setup>
-import MouseHover from './3DHover.vue'
+import MouseHover from '../components/3DHover.vue'
 </script>

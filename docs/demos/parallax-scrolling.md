@@ -15,5 +15,5 @@ background-attachment: fixed;
 - [MDN: background-attachment](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-attachment)
 
 <script setup>
-import ParallaxScrolling from './ParallaxScrolling.vue'
+import ParallaxScrolling from '../components/ParallaxScrolling.vue'
 </script>
