@@ -14,6 +14,10 @@ export default [
       {
         text: 'mix-blend-mode',
         link: '/demos/mix-blend-mode'
+      },
+      {
+        text: '文字穿透',
+        link: '/demos/text-penetration'
       }
     ]
   }

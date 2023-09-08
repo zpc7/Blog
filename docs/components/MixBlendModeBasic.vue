@@ -16,7 +16,7 @@
   background: linear-gradient(45deg, #000 0, #000 50%, #fff 50%);
 
   &::before {
-    content: "TENET 0.0 TENET";
+    content: "TENET / TENET";
     position: absolute;
     top: 50%;
     left: 50%;
