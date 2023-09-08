@@ -10,6 +10,10 @@ export default [
       {
         text: '视差滚动',
         link: '/demos/parallax-scrolling'
+      },
+      {
+        text: 'mix-blend-mode',
+        link: '/demos/mix-blend-mode'
       }
     ]
   }
