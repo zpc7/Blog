@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 import blogSidebar from './sidebar/blog';
 import snippetsSidebar from './sidebar/snippet';
 import demosSidebar from './sidebar/demo';
+import interviewSidebar from './sidebar/interview';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -25,6 +26,7 @@ export default defineConfig({
       {
         text: 'More',
         items: [
+          { text: '面试', link: '/more/interview/index' },
           { text: 'api-examples', link: '/more/api-examples' },
           { text: 'markdown-examples', link: '/more/markdown-examples' }
         ]
@@ -34,7 +36,8 @@ export default defineConfig({
     sidebar: {
       '/blog/': blogSidebar,
       '/snippets/': snippetsSidebar,
-      '/demos/': demosSidebar
+      '/demos/': demosSidebar,
+      '/more/interview/':interviewSidebar
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/zpc7/Blog' }]
