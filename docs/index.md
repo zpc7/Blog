@@ -7,7 +7,7 @@ title: Home
 hero:
   name: PC
   text: '随便写写, 以便查阅'
-  tagline: 天若不渡 人需自渡
+  tagline: You reap what you sow
   image:
     src: /home/cover.png
     alt: cover
