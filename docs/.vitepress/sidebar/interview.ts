@@ -9,15 +9,15 @@ export default [
     items: [
       {
         text: '基础',
-        link: '/interview/'
+        link: '/interview/html+css/basic'
       },
       {
         text: 'BFC',
-        link: '/interview/'
+        link: '/interview/html+css/bfc'
       },
       {
         text: '居中',
-        link: '/interview/'
+        link: '/interview/html+css/center'
       }
     ]
   },
@@ -47,13 +47,9 @@ export default [
       },
       {
         text: 'ES6 Class 转 ES5',
-        link: '/interview/class-to-es5'
+        link: '/interview/javascript/class-to-es5'
       }
     ]
-  },
-  {
-    text: '手写题',
-    collapsed: true
   },
   {
     text: 'TypeScript',
@@ -66,16 +62,20 @@ export default [
     ]
   },
   {
-    text: 'Promise',
+    text: '手写题',
+    collapsed: true
+  },
+  {
+    text: '手写Promise',
     collapsed: true,
     items: [
       {
-        text: '什么是Promise',
-        link: '/interview/promise/01'
+        text: '什么是 Promise',
+        link: '/interview/promise/guide'
       },
       {
-        text: 'Promise 基本构造',
-        link: '/interview/promise/02'
+        text: '手写 promise 基本构造器',
+        link: '/interview/promise/constructor'
       },
       {
         text: 'Promise then函数',

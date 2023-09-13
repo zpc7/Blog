@@ -26,10 +26,10 @@ export default defineConfig({
       {
         text: 'More',
         items: [
-          { text: '面试', link: '/interview/index' },
-          { text: '算法', link: '/algorithm/index' },
+          { text: '面试指南', link: '/interview/index' },
           { text: 'api-examples', link: '/more/api-examples' },
-          { text: 'markdown-examples', link: '/more/markdown-examples' }
+          { text: 'markdown-examples', link: '/more/markdown-examples' },
+          { text: '算法', link: '/algorithm/index' }
         ]
       }
     ],
@@ -38,7 +38,7 @@ export default defineConfig({
       '/blog/': blogSidebar,
       '/snippets/': snippetsSidebar,
       '/demos/': demosSidebar,
-      '/interview/':interviewSidebar
+      '/interview/': interviewSidebar
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/zpc7/Blog' }]
