@@ -78,8 +78,12 @@ export default [
         link: '/interview/promise/constructor'
       },
       {
-        text: 'Promise then函数',
-        link: '/interview/promise/03'
+        text: '手写 promise-then 的回调执行时机',
+        link: '/interview/promise/then-1'
+      },
+      {
+        text: '手写 promise-then 的回调执行时机22',
+        link: '/interview/promise/then-2'
       },
       {
         text: '微队列函数封装',
