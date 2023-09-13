@@ -30,7 +30,7 @@ Test.prototype.getName = function () {
 
 ## class 只能使用 new 调用
 
-![](../images/without-new-error.png)
+![](./images/without-new-error.png)
 判断函数调用的方式
 
 ```js{4-10}
@@ -56,7 +56,7 @@ Test.prototype.getName = function () {
 
 ## class 方法成员不可被枚举
 
-![](../images/class-keys.png)
+![](./images/class-keys.png)
 
 示例中 `class` 的方法 `getName` 不可枚举
 
@@ -87,7 +87,7 @@ Test.prototype.getName = function () {  // [!code --]
 
 ## class 方法成员不能使用 new 调用
 
-![](../images/method-new.png)
+![](./images/method-new.png)
 
 ```js
 "use strict"; // es6 class 在严格模式下执行

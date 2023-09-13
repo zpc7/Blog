@@ -26,7 +26,8 @@ export default defineConfig({
       {
         text: 'More',
         items: [
-          { text: '面试', link: '/more/interview/index' },
+          { text: '面试', link: '/interview/index' },
+          { text: '算法', link: '/algorithm/index' },
           { text: 'api-examples', link: '/more/api-examples' },
           { text: 'markdown-examples', link: '/more/markdown-examples' }
         ]
@@ -37,7 +38,7 @@ export default defineConfig({
       '/blog/': blogSidebar,
       '/snippets/': snippetsSidebar,
       '/demos/': demosSidebar,
-      '/more/interview/':interviewSidebar
+      '/interview/':interviewSidebar
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/zpc7/Blog' }]

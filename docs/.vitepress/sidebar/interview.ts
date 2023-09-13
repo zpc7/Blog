@@ -1,12 +1,182 @@
 export default [
   {
-    text: '面试题(待分类)',
-    collapsed: false,
+    text: 'Guide',
+    link: '/interview/index'
+  },
+  {
+    text: 'HTML+CSS',
+    collapsed: true,
     items: [
       {
-        text: 'ES6 Class 转 ES5',
-        link: '/more/interview/class-to-es5'
+        text: '基础',
+        link: '/interview/'
       },
+      {
+        text: 'BFC',
+        link: '/interview/'
+      },
+      {
+        text: '居中',
+        link: '/interview/'
+      }
+    ]
+  },
+  {
+    text: 'JavaScript',
+    collapsed: true,
+    items: [
+      {
+        text: '基础',
+        link: '/interview/javascript/basic'
+      },
+      {
+        text: 'JS 代码输出(一)',
+        link: '/interview/javascript/questions-1'
+      },
+      {
+        text: 'JS 代码输出(二)',
+        link: '/interview/javascript/questions-2'
+      },
+      {
+        text: 'this',
+        link: '/interview/javascript/this'
+      },
+      {
+        text: 'call apply bind',
+        link: '/interview/javascript/call-apply-bind'
+      },
+      {
+        text: 'ES6 Class 转 ES5',
+        link: '/interview/class-to-es5'
+      }
+    ]
+  },
+  {
+    text: '手写题',
+    collapsed: true
+  },
+  {
+    text: 'TypeScript',
+    collapsed: true,
+    items: [
+      {
+        text: '实现 Pick',
+        link: '/interview/class-to-es5'
+      }
+    ]
+  },
+  {
+    text: 'Promise',
+    collapsed: true,
+    items: [
+      {
+        text: '什么是Promise',
+        link: '/interview/promise/01'
+      },
+      {
+        text: 'Promise 基本构造',
+        link: '/interview/promise/02'
+      },
+      {
+        text: 'Promise then函数',
+        link: '/interview/promise/03'
+      },
+      {
+        text: '微队列函数封装',
+        link: '/interview/promise/04'
+      }
+    ]
+  },
+  {
+    text: '浏览器/网络',
+    collapsed: true,
+    items: [
+      {
+        text: '事件循环',
+        link: '/interview/promise/01'
+      },
+      {
+        text: '跨域',
+        link: '/interview/promise/02'
+      },
+      {
+        text: '缓存',
+        link: '/interview/promise/03'
+      }
+    ]
+  },
+  {
+    text: '框架和库',
+    collapsed: true,
+    items: [
+      {
+        text: 'React',
+        link: '/interview/promise/01'
+      },
+      {
+        text: 'Vue',
+        link: '/interview/promise/02'
+      },
+      {
+        text: 'Angular',
+        link: '/interview/promise/03'
+      }
+    ]
+  },
+  {
+    text: '设计模式',
+    collapsed: true,
+    items: [
+      {
+        text: '单例',
+        link: '/interview/promise/01'
+      },
+      {
+        text: '发布订阅模式',
+        link: '/interview/promise/02'
+      }
+    ]
+  },
+  {
+    text: '工程化',
+    collapsed: true,
+    items: [
+      {
+        text: 'React',
+        link: '/interview/promise/01'
+      },
+      {
+        text: 'Vue',
+        link: '/interview/promise/02'
+      },
+      {
+        text: 'Angular',
+        link: '/interview/promise/03'
+      }
+    ]
+  },
+  {
+    text: '性能优化和安全',
+    collapsed: true,
+    items: [
+      {
+        text: '性能优化',
+        link: '/interview/promise/01'
+      },
+      {
+        text: '安全',
+        link: '/interview/promise/02'
+      }
+    ]
+  },
+  {
+    text: '其他',
+    collapsed: true,
+    items: [
+      {
+        text: '性能优化',
+        link: '/interview/promise/01'
+      }
     ]
   }
 ];
