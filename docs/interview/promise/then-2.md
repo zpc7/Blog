@@ -1,24 +1,14 @@
 # 手写 promise-then 的返回值
 
-## 目标
+本章节主要处理 `.then` 回调
 
-p.then 回调函数的处理
-
-## p.then 的回调不是函数
+## .then 的回调不是函数
 
 在 `promise` 中如果 `.then` 的回调不是函数, 例如 `123`, `null`, 会直接延用原 promise 的状态和数据
 
-```js
-const p = new MyPromise((res, rej) => {
-  setTimeout(() => {
-    res('11111111');
-  }, 1000);
-});
-p.then(123, undefined).then((res) => {
-  console.log(res);
-});
-// 期望输出 11111111
-```
+`ES6 Promise` 表现如下:
+
+![es6-promise-then-no-func](../images/es6-promise-then-no-func.png)
 
 代码处理
 
@@ -45,7 +35,7 @@ p.then(123, undefined).then((res) => {
 }
 ```
 
-## p.then 的回调是函数
+## .then 的回调是函数
 
 处理函数执行, 成功或失败的情况
 
@@ -97,7 +87,7 @@ if (this.#state === FULFILLED) {
   }
 ```
 
-## p.then 回调函数的返回结果是一个 promise
+## .then 回调函数的返回结果是一个 promise
 
 ```js
 try {
@@ -116,6 +106,42 @@ try {
 注意这里我们调用了一个函数 `#isPromiseLike`, 判断其返回值是不是 满足 `promise A+` 规范的函数
 
 另外, `then` 里面的回调需要放在一个微队列中执行
+
+## 测试用例
+
+### then 的回调不是函数
+
+```js
+const p = new MyPromise((res, rej) => {
+  setTimeout(() => {
+    res('11111111');
+  }, 1000);
+});
+p.then(123, undefined).then((res) => {
+  console.log('ok:', res);
+});
+// ok: 11111111
+```
+
+### then 的回调是函数
+
+```js
+const p = new MyPromise((res, rej) => {
+  setTimeout(() => {
+    rej('1秒后拒绝!');
+  }, 1000);
+});
+p.then(123, (err) => {
+  console.log('promise 失败', err);
+  return 456;
+}).then((res) => {
+  console.log('ok:', res);
+});
+// promise 失败 1秒后拒绝!
+// ok: 456
+```
+
+上面的例子中, 1s 后 `promise` 失败, 然后执行失败的回调, 执行的过程中没有出错, 并且返回了 456, 下一个 `then` 中就捕获到这个返回
 
 ## 本章节完整代码
 
@@ -229,5 +255,3 @@ class MyPromise {
   }
 }
 ```
-## 测试用例
-TODO

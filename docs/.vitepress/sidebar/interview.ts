@@ -88,6 +88,10 @@ export default [
       {
         text: 'promise 微队列和 promise like',
         link: '/interview/promise/micro-queue'
+      },
+      {
+        text: '手写 promise 完整代码',
+        link: '/interview/promise/promise-full-code'
       }
     ]
   },
