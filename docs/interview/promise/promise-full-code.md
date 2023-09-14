@@ -1,9 +1,9 @@
 # 手写 promise 完整代码
 
 ```js:line-numbers
-const PENDING = 'pending';
-const FULFILLED = 'fulfilled';
-const REJECTED = 'rejected';
+const PENDING = "pending";
+const FULFILLED = "fulfilled";
+const REJECTED = "rejected";
 
 class MyPromise {
   /**
@@ -54,7 +54,8 @@ class MyPromise {
   #run() {
     if (this.#state === PENDING) return;
     while (this.#handlers.length) {
-      const { onFulfilled, onRejected, resolve, reject } = this.#handlers.shift();
+      const { onFulfilled, onRejected, resolve, reject } =
+        this.#handlers.shift();
       if (this.#state === FULFILLED) {
         this.#runOne(onFulfilled, resolve, reject);
       } else if (this.#state === REJECTED) {
@@ -65,7 +66,7 @@ class MyPromise {
 
   #runOne(callback, resolve, reject) {
     this.#runMicroTask(() => {
-      if (typeof callback !== 'function') {
+      if (typeof callback !== "function") {
         const settled = this.#state === FULFILLED ? resolve : reject;
         settled(this.#result);
         return;
@@ -88,22 +89,22 @@ class MyPromise {
   #isPromiseLike(val) {
     return (
       val !== null &&
-      (typeof val === 'object' || typeof val === 'function') &&
-      typeof val.then === 'function'
+      (typeof val === "object" || typeof val === "function") &&
+      typeof val.then === "function"
     );
   }
 
   #runMicroTask(func) {
-    if (typeof process === 'object' && typeof process.nextTick === 'function') {
+    if (typeof process === "object" && typeof process.nextTick === "function") {
       process.nextTick(func);
-    } else if (typeof MutationObserver === 'function') {
+    } else if (typeof MutationObserver === "function") {
       const observer = new MutationObserver(func);
-      const textNode = document.createTextNode('origin');
+      const textNode = document.createTextNode("origin");
       observer.observe(textNode, {
-        characterData: true
+        characterData: true,
       });
       // 触发文本节点的变更
-      textNode.data = 'new';
+      textNode.data = "new";
     } else {
       setTimeout(func, 0);
     }
@@ -117,9 +118,47 @@ class MyPromise {
         onFulfilled,
         onRejected,
         resolve,
-        reject
+        reject,
       });
       this.#run();
+    });
+  }
+
+  catch(onRejected) {
+    return this.then(undefined, onRejected);
+  }
+
+  finally(onFinally) {
+    return this.then(
+      (data) => {
+        onFinally();
+        return data;
+      },
+      (err) => {
+        onFinally();
+        throw err;
+      }
+    );
+  }
+
+  static resolve(value) {
+    if (value instanceof MyPromise) return value;
+    let _resolve, _reject; // 静态方法中不能使用 this, 于是手动创建一个 promise
+    const instance = new MyPromise((resolve, reject) => {
+      _resolve = resolve;
+      _reject = reject;
+    });
+    if (instance.#isPromiseLike(value)) {
+      value.then(_resolve, _reject);
+    } else {
+      _resolve(value);
+    }
+    return instance;
+  }
+
+  static reject(reason) {
+    return new MyPromise((resolve, reject) => {
+      reject(reason);
     });
   }
 }

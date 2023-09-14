@@ -67,7 +67,7 @@ export default [
   },
   {
     text: '手写Promise',
-    collapsed: true,
+    collapsed: false,
     items: [
       {
         text: '什么是 Promise',
@@ -88,6 +88,10 @@ export default [
       {
         text: 'promise 微队列和 promise like',
         link: '/interview/promise/micro-queue'
+      },
+      {
+        text: 'resolve reject catch finally',
+        link: '/interview/promise/resolve-reject-catch-finally'
       },
       {
         text: '手写 promise 完整代码',

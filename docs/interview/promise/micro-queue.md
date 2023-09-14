@@ -78,6 +78,7 @@ new MyPromise((resolve) => {
 }).then((data) => {
   console.log(data);
 });
+console.log(3);
 // 3
 // 2
 // 1
