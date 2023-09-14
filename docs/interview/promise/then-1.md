@@ -37,6 +37,10 @@ p.then(
   }
 ```
 
+将 then 中的参数暂存, 在状态更改后调用, 如图
+
+![](../images/then-callback.png)
+
 改进完整代码, 高亮位置为新增代码
 
 ```js:line-numbers {22,47,50-79}

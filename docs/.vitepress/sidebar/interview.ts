@@ -74,20 +74,20 @@ export default [
         link: '/interview/promise/guide'
       },
       {
-        text: '手写 promise 基本构造器',
+        text: 'promise 基本构造器',
         link: '/interview/promise/constructor'
       },
       {
-        text: '手写 promise-then 的回调执行时机',
+        text: 'promise-then 的回调执行时机',
         link: '/interview/promise/then-1'
       },
       {
-        text: '手写 promise-then 的回调执行时机22',
+        text: 'promise-then 的返回值',
         link: '/interview/promise/then-2'
       },
       {
-        text: '微队列函数封装',
-        link: '/interview/promise/04'
+        text: 'promise 微队列和 promise like',
+        link: '/interview/promise/micro-queue'
       }
     ]
   },
