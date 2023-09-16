@@ -23,11 +23,15 @@ export default [
   },
   {
     text: 'JavaScript',
-    collapsed: true,
+    collapsed: false,
     items: [
       {
         text: '基础',
         link: '/interview/javascript/basic'
+      },
+      {
+        text: '基础 ⭐️⭐️⭐️',
+        link: '/interview/javascript/basic-hard'
       },
       {
         text: 'JS 代码输出(一)',
@@ -57,7 +61,11 @@ export default [
     items: [
       {
         text: '实现 Pick',
-        link: '/interview/class-to-es5'
+        link: '/interview/typescript/basic'
+      },
+      {
+        text: '实现 Pick',
+        link: '/interview/typescript/pick'
       }
     ]
   },
