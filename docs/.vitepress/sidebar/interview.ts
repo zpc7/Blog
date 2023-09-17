@@ -71,7 +71,13 @@ export default [
   },
   {
     text: '手写题',
-    collapsed: true
+    collapsed: false,
+    items: [
+      {
+        text: '实现链式调用和延迟执行',
+        link: '/interview/handwriting/chain-call-and-delay-execution'
+      }
+    ]
   },
   {
     text: '手写Promise',
