@@ -46,6 +46,10 @@ export default [
         link: '/interview/javascript/this'
       },
       {
+        text: 'new 操作符',
+        link: '/interview/javascript/new'
+      },
+      {
         text: 'call apply bind',
         link: '/interview/javascript/call-apply-bind'
       },
