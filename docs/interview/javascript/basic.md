@@ -1,6 +1,6 @@
 # 基础
 
-## JS 中有哪些数据类型?
+## 1. JS 中有哪些数据类型?
 
 JS 有如下 7 种基本类型 + 1 种引用类型(`Object`)
 | 类型 | typeof 返回值 | 对象包装器 |
@@ -13,7 +13,7 @@ JS 有如下 7 种基本类型 + 1 种引用类型(`Object`)
 |String| "string" | String |
 |Symbol| "symbol" | Symbol |
 
-## 基本类型和引用类型存储上的区别?
+## 2. 基本类型和引用类型存储上的区别?
 
 基本数据类型和引用数据类型存储在内存中的位置不同：
 
@@ -60,7 +60,7 @@ console.log(obj1.name); // xxx
 - [MDN JS 类型和数据结构](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures#%E5%8A%A8%E6%80%81%E5%92%8C%E5%BC%B1%E7%B1%BB%E5%9E%8B)
 - [数据类型和存储的区别](https://vue3js.cn/interview/JavaScript/data_type.html#%E5%89%8D%E8%A8%80)
 
-## typeof 与 instanceof 区别
+## 3. typeof 与 instanceof 区别
 
 ### typeof
 
@@ -102,7 +102,7 @@ let str = 'xxx';
 str instanceof String; // false
 ```
 
-#### instanceof 模拟实现
+#### instanceof 模拟实现 ⭐️
 
 也就是顺着原型链去找，直到找到相同的原型对象，返回 true，否则为 false
 
