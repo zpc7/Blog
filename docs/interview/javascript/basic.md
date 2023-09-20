@@ -59,3 +59,73 @@ console.log(obj1.name); // xxx
 
 - [MDN JS 类型和数据结构](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures#%E5%8A%A8%E6%80%81%E5%92%8C%E5%BC%B1%E7%B1%BB%E5%9E%8B)
 - [数据类型和存储的区别](https://vue3js.cn/interview/JavaScript/data_type.html#%E5%89%8D%E8%A8%80)
+
+## typeof 与 instanceof 区别
+
+### typeof
+
+typeof 是一个操作符，用于检查给定值的数据类型。 返回值为 string
+
+| 类型         | 结果                     |
+| ------------ | ------------------------ |
+| Undefined    | "undefined"              |
+| Null         | "object"（历史遗留原因） |
+| Boolean      | "boolean"                |
+| Number       | "number"                 |
+| BigInt       | "bigint"                 |
+| String       | "string"                 |
+| Symbol       | "symbol"                 |
+| Function     | "function"               |
+| 其他任何对象 | "object"                 |
+
+### instanceof
+
+instanceof 是一个运算符，用于检查**实例对象**的原型链中是否存在指定的构造函数。返回值为 boolean
+
+```js
+object instanceof constructor;
+// object 为实例对象，constructor 为构造函数
+```
+
+构造函数通过 new 可以实例对象，instanceof 能判断这个对象是否是之前那个构造函数生成的对象
+
+```js
+// 定义构建函数
+let Car = function () {};
+let benz = new Car();
+benz instanceof Car; // true
+
+let car = new String('xxx');
+car instanceof String; // true
+
+let str = 'xxx';
+str instanceof String; // false
+```
+
+#### instanceof 模拟实现
+
+也就是顺着原型链去找，直到找到相同的原型对象，返回 true，否则为 false
+
+```js
+function myInstanceof(left, right) {
+  // 这里先用 typeof 来判断基础数据类型，如果是，直接返回 false
+  if (typeof left !== 'object' || left === null) return false;
+  // getPrototypeOf 是 Object 对象自带的 API，能够拿到参数的原型对象
+  let proto = Object.getPrototypeOf(left);
+  while (true) {
+    if (proto === null) return false;
+    if (proto === right.prototype) return true; //找到相同原型对象，返回 true
+    proto = Object.getPrototypeOf(proto);
+  }
+}
+```
+
+### 区别
+
+- typeof 用于检查值的数据类型，特别适用于基本数据类型和函数的检查。
+- instanceof 用于检查对象的原型链中的构造函数，用于自定义对象的类型检查。
+
+### 参考链接
+
+- [MDN typeof](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/typeof)
+- [MDN instanceof](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/instanceof)
