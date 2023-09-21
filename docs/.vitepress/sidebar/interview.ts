@@ -50,8 +50,12 @@ export default [
         link: '/interview/javascript/new'
       },
       {
-        text: 'call apply bind',
+        text: 'call apply 和 bind',
         link: '/interview/javascript/call-apply-bind'
+      },
+      {
+        text: 'bind 模拟实现 ⭐️(TODO:)',
+        link: '/interview/javascript/bind-implement'
       },
       {
         text: 'ES6 Class 转 ES5',

@@ -93,7 +93,7 @@ console.log(instance.__proto__ === Object.prototype); // true
 
 4. 根据构建函数返回类型作判断，如果是基础类型或 `null` 则被忽略，如果是返回其他对象，需要正常处理
 
-## 实现 new 操作符 ⭐️
+## 模拟实现 new 操作符 ⭐️
 
 ```js
 function myNew(Func, ...args) {
