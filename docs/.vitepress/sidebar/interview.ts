@@ -54,7 +54,7 @@ export default [
         link: '/interview/javascript/call-apply-bind'
       },
       {
-        text: 'bind 模拟实现 ⭐️(TODO:)',
+        text: 'bind 模拟实现 ⭐️',
         link: '/interview/javascript/bind-implement'
       },
       {
