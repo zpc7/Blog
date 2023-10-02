@@ -1,8 +1,9 @@
 # 基础
+* [【源码阅读】arrify｜如何把一个值转换为一个数组？](https://mp.weixin.qq.com/s/hChlOTwpSjoJkSKi7ka6yg)
 
 ## 1. JS 中有哪些数据类型?
 
-JS 有如下 7 种基本类型 + 1 种引用类型(`Object`)
+JS 有如下 7 种基本类型 + 1 种引用类型( `Object` )
 | 类型 | typeof 返回值 | 对象包装器 |
 | ------------- | ----------- | ---- |
 |Null| "object" | N/A |
@@ -17,9 +18,9 @@ JS 有如下 7 种基本类型 + 1 种引用类型(`Object`)
 
 基本数据类型和引用数据类型存储在内存中的位置不同：
 
-- 基本数据类型存储在栈中
+* 基本数据类型存储在栈中
 
-- 引用类型的对象存储于堆中
+* 引用类型的对象存储于堆中
 
 当我们把变量赋值给一个变量时，解析器首先要确认的就是这个值是基本类型值还是引用类型值
 
@@ -32,7 +33,7 @@ b = 20;
 console.log(a); // 10值
 ```
 
-`a` 的值为一个基本类型，是存储在栈中，将 `a` 的值赋给 `b`，虽然两个变量的值相等，但是两个变量保存了两个不同的内存地址
+`a` 的值为一个基本类型，是存储在栈中，将 `a` 的值赋给 `b` ，虽然两个变量的值相等，但是两个变量保存了两个不同的内存地址
 
 下图演示了基本类型赋值的过程：
 
@@ -49,7 +50,7 @@ console.log(obj1.name); // xxx
 
 引用类型数据存放在堆中，每个堆内存对象都有对应的引用地址指向它，引用地址存放在栈中。
 
-`obj1` 是一个引用类型，在赋值操作过程汇总，实际是将堆内存对象在栈内存的引用地址复制了一份给了 `obj2`，实际上他们共同指向了同一个堆内存对象，所以更改 `obj2` 会对 `obj1` 产生影响
+`obj1` 是一个引用类型，在赋值操作过程汇总，实际是将堆内存对象在栈内存的引用地址复制了一份给了 `obj2` ，实际上他们共同指向了同一个堆内存对象，所以更改 `obj2` 会对 `obj1` 产生影响
 
 下图演示这个引用类型赋值过程
 
@@ -57,8 +58,8 @@ console.log(obj1.name); // xxx
 
 ### 参考链接
 
-- [MDN JS 类型和数据结构](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures#%E5%8A%A8%E6%80%81%E5%92%8C%E5%BC%B1%E7%B1%BB%E5%9E%8B)
-- [数据类型和存储的区别](https://vue3js.cn/interview/JavaScript/data_type.html#%E5%89%8D%E8%A8%80)
+* [MDN JS 类型和数据结构](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures#%E5%8A%A8%E6%80%81%E5%92%8C%E5%BC%B1%E7%B1%BB%E5%9E%8B)
+* [数据类型和存储的区别](https://vue3js.cn/interview/JavaScript/data_type.html#%E5%89%8D%E8%A8%80)
 
 ## 3. typeof 与 instanceof 区别
 
@@ -91,7 +92,7 @@ object instanceof constructor;
 
 ```js
 // 定义构建函数
-let Car = function () {};
+let Car = function() {};
 let benz = new Car();
 benz instanceof Car; // true
 
@@ -122,10 +123,28 @@ function myInstanceof(left, right) {
 
 ### 区别
 
-- typeof 用于检查值的数据类型，特别适用于基本数据类型和函数的检查。
-- instanceof 用于检查对象的原型链中的构造函数，用于自定义对象的类型检查。
+* typeof 用于检查值的数据类型，特别适用于基本数据类型和函数的检查。
+* instanceof 用于检查对象的原型链中的构造函数，用于自定义对象的类型检查。
 
 ### 参考链接
 
-- [MDN typeof](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/typeof)
-- [MDN instanceof](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/instanceof)
+* [MDN typeof](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/typeof)
+* [MDN instanceof](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/instanceof)
+
+## 4. 下面正则的输出?
+
+```js
+console.log(/[^@]+@..(com|cn){1}$/ig.test('sdfkdsf@dsd.com'))
+// false 因为 'dsd.'部分匹配了4个字符
+
+// [^@]+：匹配一个或多个不包含 @ 字符的字符。这部分用于匹配电子邮件地址中的用户名部分。
+// @：匹配 @ 字符。
+// ..：匹配任意两个字符，这用于匹配邮件地址中的域名部分的前两个字符。
+
+console.log(/[^@]@.*.(com|cn){1}$/ig.test('sdfkdsf@dsd.cen.com'))
+//true 
+```
+
+### 参考链接
+
+[正则 MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)

@@ -10,14 +10,6 @@ export default [
       {
         text: '基础',
         link: '/interview/html+css/basic'
-      },
-      {
-        text: 'BFC',
-        link: '/interview/html+css/bfc'
-      },
-      {
-        text: '居中',
-        link: '/interview/html+css/center'
       }
     ]
   },
@@ -65,14 +57,11 @@ export default [
   },
   {
     text: 'TypeScript',
-    collapsed: true,
+    collapsed: false,
+    link: '/interview/typescript/index',
     items: [
       {
         text: '实现 Pick',
-        link: '/interview/typescript/basic'
-      },
-      {
-        text: 'type 与 interface 的区别',
         link: '/interview/typescript/pick'
       }
     ]
@@ -80,23 +69,36 @@ export default [
   {
     text: '手写题',
     collapsed: false,
+    link: '/interview/typescript/index',
     items: [
       {
         text: '实现链式调用和延迟执行',
         link: '/interview/handwriting/chain-call-and-delay-execution'
       },
       {
+        text: '手写100以内的质数',
+        link: '/interview/handwriting/prime-number'
+      },
+      {
+        text: '扁平数组转树形结构',
+        link: '/interview/handwriting/array-to-tree'
+      },
+      {
+        text: '树形结构转扁平结构',
+        link: '/interview/handwriting/tree-to-array'
+      },
+      {
+        text: '实现useUpdateEffect',
+        link: '/interview/handwriting/useUpdateEffect'
+      },
+      {
         text: '实现深克隆',
-        link: '/interview/handwriting/chain-call-and-delay-execution'
+        link: '/interview/handwriting/to'
       },
       {
         text: '排序',
-        link: '/interview/handwriting/chain-call-and-delay-execution'
-      },
-      {
-        text: '数组和树转换',
-        link: '/interview/handwriting/chain-call-and-delay-execution'
-      },
+        link: '/interview/handwriting/to'
+      }
     ]
   },
   {
@@ -138,16 +140,28 @@ export default [
     collapsed: false,
     items: [
       {
-        text: '事件循环',
-        link: '/interview/browser-network/01'
+        text: 'JS 执行机制 / Event Loop',
+        link: '/interview/browser-network/event-loop'
       },
       {
-        text: '跨域',
-        link: '/interview/browser-network/02'
+        text: '同源策略+跨域处理',
+        link: '/interview/browser-network/cross-domain'
+      },
+      {
+        text: '文件下载',
+        link: '/interview/browser-network/file-download'
+      },
+      {
+        text: 'cookie/session/storage',
+        link: '/interview/browser-network/storage'
+      },
+      {
+        text: 'requestIdleCallback / requestAnimationFrame',
+        link: '/interview/browser-network/requestIdleCallback-requestAnimationFrame'
       },
       {
         text: '缓存',
-        link: '/interview/browser-network/03'
+        link: '/interview/browser-network/cache'
       },
       {
         text: 'HTTP',
@@ -155,55 +169,85 @@ export default [
       },
       {
         text: 'webworker',
-        link: '/interview/browser-network/http'
+        link: '/interview/browser-network/webworker'
       },
       {
-        text: '观察期API',
-        link: '/interview/browser-network/http'
+        text: 'WebGL',
+        link: '/interview/browser-network/WebGL'
       },
+      {
+        text: '观察器 API',
+        link: '/interview/browser-network/observer-api'
+      }
     ]
   },
   {
     text: '框架和库',
-    collapsed: true,
+    collapsed: false,
     items: [
       {
         text: 'React',
-        link: '/interview/framework/react'
+        items: [
+          {
+            text: 'React 及相关 API',
+            link: '/interview/framework/react/index'
+          },
+          {
+            text: 'React Refs 相关的 API',
+            link: '/interview/framework/react/refs'
+          },
+          {
+            text: 'React 18',
+            link: '/interview/framework/react/react18'
+          }
+        ]
       },
       {
         text: 'Vue',
-        link: '/interview/framework/vue'
+        link: '/interview/framework/vue/index'
       },
       {
         text: 'Angular',
+        link: '/interview/framework/ng'
+      },
+      {
+        text: 'MVC/MVVM',
         link: '/interview/framework/ng'
       }
     ]
   },
   {
-    text: '工程化',
+    text: '前端工程化',
     collapsed: false,
+    link: '/interview/engineering/index',
     items: [
       {
         text: '模块化',
         link: '/interview/engineering/module'
       },
       {
-        text: '构建工具 Vite/Webpack/Rollup',
-        link: '/interview/promise/02'
+        text: '微前端',
+        link: '/interview/engineering/micro-fe'
       },
       {
-        text: '微前端',
-        link: '/interview/promise/02'
+        text: '包管理器',
+        link: '/interview/engineering/package-manage'
+      },
+      {
+        text: '构建工具 Vite/Webpack/Rollup',
+        link: '/interview/engineering/build-tool'
       },
       {
         text: 'Nginx',
-        link: '/interview/promise/03'
+        link: '/interview/engineering/nginx'
       },
       {
         text: 'Docker',
-        link: '/interview/promise/03'
+        link: '/interview/engineering/docker'
+      },
+      {
+        text: '服务/偏后端',
+        link: '/interview/engineering/other'
       }
     ]
   },
@@ -213,11 +257,11 @@ export default [
     items: [
       {
         text: '性能优化',
-        link: '/interview/promise/01'
+        link: '/interview/opt-secure/opt'
       },
       {
         text: '安全',
-        link: '/interview/promise/02'
+        link: '/interview/opt-secure/secure'
       }
     ]
   },
@@ -232,7 +276,11 @@ export default [
       {
         text: '发布订阅模式',
         link: '/interview/promise/02'
+      },
+      {
+        text: '发布订阅模式',
+        link: '/interview/promise/02'
       }
     ]
-  },
+  }
 ];
