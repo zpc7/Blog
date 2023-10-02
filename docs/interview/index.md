@@ -11,4 +11,4 @@
 - [🌟🌟 力荐: web 前端面试 - 面试官系列](https://vue3js.cn/interview/)
 - [chodocs](https://chodocs.cn/interview/)
 - [前端面试](https://lgwebdream.github.io/FE-Interview/)
-- [早早聊大厂面试题](https://www.yuque.com/zaotalk/interview)
+- [早早聊知识大纲](https://www.yuque.com/zaotalk/interview/oewktn#o2ZZ)

@@ -72,7 +72,7 @@ export default [
         link: '/interview/typescript/basic'
       },
       {
-        text: '实现 Pick',
+        text: 'type 与 interface 的区别',
         link: '/interview/typescript/pick'
       }
     ]
@@ -84,7 +84,19 @@ export default [
       {
         text: '实现链式调用和延迟执行',
         link: '/interview/handwriting/chain-call-and-delay-execution'
-      }
+      },
+      {
+        text: '实现深克隆',
+        link: '/interview/handwriting/chain-call-and-delay-execution'
+      },
+      {
+        text: '排序',
+        link: '/interview/handwriting/chain-call-and-delay-execution'
+      },
+      {
+        text: '数组和树转换',
+        link: '/interview/handwriting/chain-call-and-delay-execution'
+      },
     ]
   },
   {
@@ -123,20 +135,32 @@ export default [
   },
   {
     text: '浏览器/网络',
-    collapsed: true,
+    collapsed: false,
     items: [
       {
         text: '事件循环',
-        link: '/interview/promise/01'
+        link: '/interview/browser-network/01'
       },
       {
         text: '跨域',
-        link: '/interview/promise/02'
+        link: '/interview/browser-network/02'
       },
       {
         text: '缓存',
-        link: '/interview/promise/03'
-      }
+        link: '/interview/browser-network/03'
+      },
+      {
+        text: 'HTTP',
+        link: '/interview/browser-network/http'
+      },
+      {
+        text: 'webworker',
+        link: '/interview/browser-network/http'
+      },
+      {
+        text: '观察期API',
+        link: '/interview/browser-network/http'
+      },
     ]
   },
   {
@@ -145,46 +169,40 @@ export default [
     items: [
       {
         text: 'React',
-        link: '/interview/promise/01'
+        link: '/interview/framework/react'
       },
       {
         text: 'Vue',
-        link: '/interview/promise/02'
+        link: '/interview/framework/vue'
       },
       {
         text: 'Angular',
-        link: '/interview/promise/03'
-      }
-    ]
-  },
-  {
-    text: '设计模式',
-    collapsed: true,
-    items: [
-      {
-        text: '单例',
-        link: '/interview/promise/01'
-      },
-      {
-        text: '发布订阅模式',
-        link: '/interview/promise/02'
+        link: '/interview/framework/ng'
       }
     ]
   },
   {
     text: '工程化',
-    collapsed: true,
+    collapsed: false,
     items: [
       {
-        text: 'React',
-        link: '/interview/promise/01'
+        text: '模块化',
+        link: '/interview/engineering/module'
       },
       {
-        text: 'Vue',
+        text: '构建工具 Vite/Webpack/Rollup',
         link: '/interview/promise/02'
       },
       {
-        text: 'Angular',
+        text: '微前端',
+        link: '/interview/promise/02'
+      },
+      {
+        text: 'Nginx',
+        link: '/interview/promise/03'
+      },
+      {
+        text: 'Docker',
         link: '/interview/promise/03'
       }
     ]
@@ -204,13 +222,17 @@ export default [
     ]
   },
   {
-    text: '其他',
+    text: '设计模式',
     collapsed: true,
     items: [
       {
-        text: '性能优化',
+        text: '单例',
         link: '/interview/promise/01'
+      },
+      {
+        text: '发布订阅模式',
+        link: '/interview/promise/02'
       }
     ]
-  }
+  },
 ];
