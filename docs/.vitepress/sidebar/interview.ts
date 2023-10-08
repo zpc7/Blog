@@ -223,11 +223,13 @@ export default [
     items: [
       {
         text: '模块化',
-        link: '/interview/engineering/module'
-      },
-      {
-        text: '微前端',
-        link: '/interview/engineering/micro-fe'
+        link: '/interview/engineering/module',
+        items: [
+          {
+            text: 'CommonJS 输出题和 require 伪代码',
+            link: '/interview/engineering/commonjs-output'
+          }
+        ]
       },
       {
         text: '包管理器',
@@ -236,6 +238,10 @@ export default [
       {
         text: '构建工具 Vite/Webpack/Rollup',
         link: '/interview/engineering/build-tool'
+      },
+      {
+        text: '微前端',
+        link: '/interview/engineering/micro-fe'
       },
       {
         text: 'Nginx',
