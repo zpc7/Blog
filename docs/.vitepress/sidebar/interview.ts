@@ -15,7 +15,7 @@ export default [
   },
   {
     text: 'JavaScript',
-    collapsed: false,
+    collapsed: true,
     items: [
       {
         text: '基础',
@@ -68,7 +68,7 @@ export default [
   },
   {
     text: '手写题',
-    collapsed: false,
+    collapsed: true,
     link: '/interview/typescript/index',
     items: [
       {
@@ -103,7 +103,7 @@ export default [
   },
   {
     text: '手写Promise',
-    collapsed: false,
+    collapsed: true,
     items: [
       {
         text: '什么是 Promise',
@@ -183,7 +183,7 @@ export default [
   },
   {
     text: '框架和库',
-    collapsed: false,
+    collapsed: true,
     items: [
       {
         text: 'React',
@@ -273,20 +273,17 @@ export default [
   },
   {
     text: '设计模式',
-    collapsed: true,
+    collapsed: false,
+    link: '/interview/design-pattern/index',
     items: [
       {
-        text: '单例',
-        link: '/interview/promise/01'
+        text: '单例模式',
+        link: '/interview/design-pattern/singleton'
       },
       {
-        text: '发布订阅模式',
-        link: '/interview/promise/02'
+        text: '发布订阅模式和观测者模式',
+        link: '/interview/design-pattern/publish-subscribe-and-observer'
       },
-      {
-        text: '发布订阅模式',
-        link: '/interview/promise/02'
-      }
     ]
   }
 ];
