@@ -57,7 +57,7 @@ export default [
   },
   {
     text: 'TypeScript',
-    collapsed: false,
+    collapsed: true,
     link: '/interview/typescript/index',
     items: [
       {
@@ -67,14 +67,10 @@ export default [
     ]
   },
   {
-    text: '手写题',
-    collapsed: true,
+    text: '手写题(TODO)',
+    collapsed: false,
     link: '/interview/typescript/index',
     items: [
-      {
-        text: '实现链式调用和延迟执行',
-        link: '/interview/handwriting/chain-call-and-delay-execution'
-      },
       {
         text: '手写100以内的质数',
         link: '/interview/handwriting/prime-number'
@@ -88,16 +84,24 @@ export default [
         link: '/interview/handwriting/tree-to-array'
       },
       {
-        text: '实现useUpdateEffect',
-        link: '/interview/handwriting/useUpdateEffect'
+        text: '克隆',
+        link: '/interview/handwriting/clone'
       },
       {
-        text: '实现深克隆',
+        text: '千位分隔符',
         link: '/interview/handwriting/to'
       },
       {
         text: '排序',
         link: '/interview/handwriting/to'
+      },
+      {
+        text: '实现useUpdateEffect',
+        link: '/interview/handwriting/useUpdateEffect'
+      },
+      {
+        text: '实现链式调用和延迟执行',
+        link: '/interview/handwriting/chain-call-and-delay-execution'
       }
     ]
   },
@@ -137,7 +141,7 @@ export default [
   },
   {
     text: '浏览器/网络',
-    collapsed: false,
+    collapsed: true,
     items: [
       {
         text: 'JS 执行机制 / Event Loop',
@@ -218,7 +222,7 @@ export default [
   },
   {
     text: '前端工程化',
-    collapsed: false,
+    collapsed: true,
     link: '/interview/engineering/index',
     items: [
       {
@@ -273,7 +277,7 @@ export default [
   },
   {
     text: '设计模式',
-    collapsed: false,
+    collapsed: true,
     link: '/interview/design-pattern/index',
     items: [
       {
@@ -283,7 +287,7 @@ export default [
       {
         text: '发布订阅模式和观测者模式',
         link: '/interview/design-pattern/publish-subscribe-and-observer'
-      },
+      }
     ]
   }
 ];
