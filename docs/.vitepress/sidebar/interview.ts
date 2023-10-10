@@ -88,10 +88,6 @@ export default [
         link: '/interview/handwriting/clone'
       },
       {
-        text: '千位分隔符',
-        link: '/interview/handwriting/to'
-      },
-      {
         text: '排序',
         link: '/interview/handwriting/to'
       },
