@@ -18,6 +18,10 @@ export default [
       {
         text: '文字穿透',
         link: '/demos/text-penetration'
+      },
+      {
+        text: '行盒元素截断样式',
+        link: '/demos/inline-split-style'
       }
     ]
   }

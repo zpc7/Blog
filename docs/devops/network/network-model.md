@@ -7,7 +7,7 @@
 
 ## PDF资料
 
-[网络模型介绍](https://github.com/zpc7/Blog/tree/master/docs/public/pdf/devops/一个数据包的一生.pdf)
+[网络模型介绍](https://github.com/zpc7/Blog/tree/master/docs/public/pdf/devops/网络模型介绍.pdf)
 
 ## TCP/IP协议 划分方式
 
