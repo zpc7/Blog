@@ -43,4 +43,7 @@ features:
   - title: MDN 正则
     details: 正则查阅
     link: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions
+  - title: vitepress
+    details: vitepress 官方文档
+    link: https://vitepress.dev/
 ---

@@ -3,6 +3,7 @@ import blogSidebar from './sidebar/blog';
 import snippetsSidebar from './sidebar/snippet';
 import demosSidebar from './sidebar/demo';
 import interviewSidebar from './sidebar/interview';
+import devopsSidebar from './sidebar/devops';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -29,7 +30,8 @@ export default defineConfig({
           { text: '面试指南', link: '/interview/index' },
           { text: 'api-examples', link: '/more/api-examples' },
           { text: 'markdown-examples', link: '/more/markdown-examples' },
-          { text: '算法', link: '/algorithm/index' }
+          { text: '算法', link: '/algorithm/index' },
+          { text: 'Devops', link: '/devops/index' }
         ]
       }
     ],
@@ -38,7 +40,8 @@ export default defineConfig({
       '/blog/': blogSidebar,
       '/snippets/': snippetsSidebar,
       '/demos/': demosSidebar,
-      '/interview/': interviewSidebar
+      '/interview/': interviewSidebar,
+      '/devops/': devopsSidebar
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/zpc7/Blog' }]
