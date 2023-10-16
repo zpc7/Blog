@@ -92,6 +92,10 @@ export default [
         link: '/interview/handwriting/to'
       },
       {
+        text: '扁平化嵌套数组',
+        link: '/interview/handwriting/flatten-deeply-nested-array'
+      },
+      {
         text: '实现useUpdateEffect',
         link: '/interview/handwriting/useUpdateEffect'
       },

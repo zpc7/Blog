@@ -14,6 +14,8 @@
 
 ## 文章
 
+* [使用 Preload/Prefetch 优化你的应用](https://zhuanlan.zhihu.com/p/48521680)
+* [Preload Prefetch Preconnect](https://juejin.cn/post/7274889579076108348)
 * [面试遇到性能优化问题回答这 9 点，绝对加分！](https://mp.weixin.qq.com/s/fteB8JEGbBwrOtmYVzJQzQ)
 * [浏览器Transfer Size vs. Resource Size异同](https://www.webperf.tips/tip/resource-size-vs-transfer-size/)
 * [Web Performance Tips ⚡](https://www.webperf.tips/)
