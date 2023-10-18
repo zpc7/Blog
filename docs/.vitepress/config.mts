@@ -4,6 +4,7 @@ import snippetsSidebar from './sidebar/snippet';
 import demosSidebar from './sidebar/demo';
 import interviewSidebar from './sidebar/interview';
 import devopsSidebar from './sidebar/devops';
+import algorithmSidebar from './sidebar/algorithm';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -41,7 +42,8 @@ export default defineConfig({
       '/snippets/': snippetsSidebar,
       '/demos/': demosSidebar,
       '/interview/': interviewSidebar,
-      '/devops/': devopsSidebar
+      '/devops/': devopsSidebar,
+      '/algorithm/': algorithmSidebar,
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/zpc7/Blog' }]
