@@ -7,7 +7,6 @@
 ## requestIdleCallback
 
 * [2022年了, 还不懂requestIdleCallback么？](https://www.developers.pub/article/1028858) 🌟 
-   >  
 
 ![Image](https://user-images.githubusercontent.com/15316908/263005611-0475051c-375c-4fe8-98ba-5234e9921dc5.png)
 

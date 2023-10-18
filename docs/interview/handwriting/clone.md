@@ -2,7 +2,7 @@
 
 ## 浅克隆
 
-浅克隆是指创建一个新对象，该对象具有与原始对象相同的属性和值。但与深克隆不同，如果原始对象的属性值是对象引用，浅克隆将复制这个引用，而不是创建一个新的对象。
+浅克隆是指创建一个新对象， 该对象具有与原始对象相同的属性和值。 但与深克隆不同， 如果原始对象的属性值是对象引用， 浅克隆将复制这个引用， 而不是创建一个新的对象。 
 
 ### 使用扩展运算符
 
@@ -93,7 +93,7 @@ function deepClone(obj) {
 ```js:line-numbers {2-3,18-21,24-25}
 function deepClone(obj) {
   // 使用 weakMap 解决循环引用问题
-  const cache = new WeakMap();
+  const cache = new WeakMap(); 
 
   function _deepClone(val) {
     if (val === null || typeof val !== "object") {
@@ -126,24 +126,25 @@ function deepClone(obj) {
     return result;
   }
 
-  return _deepClone(obj);
+  return _deepClone(obj); 
 }
 
 // 测试数据
 const test = {
-  arr: [1, 2, 3],
-  a: 4,
-};
+  arr: [1, 2, 3], 
+  a: 4, 
+}; 
 
-test.self = test;
-test.arr.push(test);
+test.self = test; 
+test.arr.push(test); 
 
 // 测试断言
-const newTest = deepClone(test);
+const newTest = deepClone(test); 
 console.log(newTest.arr !== test.arr); // true
 console.log(newTest.self !== test.self); // true
 console.log(newTest.arr[3] !== test); // true
 console.log(newTest.arr[3] === newTest); // true
+
 ```
 
 初次调用 `deepClone` 时，参数会创建一个WeakMap结构的对象，这种数据结构的特点之一是，存储键值对中的 `健` 必须是 `对象` 类型。
@@ -153,6 +154,8 @@ console.log(newTest.arr[3] === newTest); // true
 * 传入了上一个待拷贝对象的对象属性的引用和存储了上一个待拷贝对象引用的weakMap，因为如果是循环引用产生的闭环，那么这两个引用是指向相同的对象的，因此会进入if(cache.has())语句内，然后return，退出函数，所以不会一直递归进栈，以此防止栈溢出
 
 ### JSON.parse(JSON.stringify())
+
+序列化和反序列化
 
 ```js
 const originalObject = {
@@ -166,8 +169,47 @@ const clonedObject = JSON.parse(JSON.stringify(originalObject));
 ```
 
 这种方法的弊端:
-* 无法处理包含函数、undefined、Symbol、Set、Map 等特殊值的属性
-* 无法处理对象中的循环引用（对象之间相互引用，导致无限循环）
+* 无法处理包含函数、 undefined、 Symbol、 Set、 Map 等特殊值的属性
+* 无法处理对象中的循环引用（对象之间相互引用， 导致无限循环）
+
+#### MessageChannel
+
+`MessageChannel` 的消息在发送和接收的过程需要序列化和反序列化。 利用这个特性， 我们可以实现深拷贝
+
+```js
+function deepClone(obj) {
+  return new Promise((resolve, reject) => {
+    try {
+      const { port1, port2 } = new MessageChannel();
+
+      port2.onmessage = function (e) {
+        resolve(e.data);
+      };
+      port1.postMessage(obj);
+    } catch (e) {
+      reject(e);
+    }
+  });
+}
+
+const oldObj = { a: { b: 1 } };
+
+deepClone(oldObj).then((newObj) => {
+  console.log(oldObj === newObj); // false
+  newObj.a.b = 2;
+  console.log(oldObj.a.b); // 1
+});
+```
+
+与 `JSON.parse(JSON.stringify())` 一样, 当消息包含函数、 Symbol等不可序列化的值时， 就会报无法克隆的DOM异常
+
+```js
+deepClone({ fn: () => {} }).catch((e) => {
+  console.log(e); // DOMException...could not be cloned
+});
+```
+
+限制: 这是一个 `HTML DOM API` , 参考: [MDN MessageChannel](https://developer.mozilla.org/zh-CN/docs/Web/API/MessageChannel)
 
 ### structuredClone
 

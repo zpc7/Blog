@@ -10,6 +10,10 @@ export default [
       {
         text: '基础',
         link: '/interview/html+css/basic'
+      },
+      {
+        text: 'BFC',
+        link: '/interview/html+css/bfc'
       }
     ]
   },
@@ -201,6 +205,10 @@ export default [
             link: '/interview/framework/react/refs'
           },
           {
+            text: 'React Fiber',
+            link: '/interview/framework/react/fiber'
+          },
+          {
             text: 'React 18',
             link: '/interview/framework/react/react18'
           }
@@ -208,7 +216,16 @@ export default [
       },
       {
         text: 'Vue',
-        link: '/interview/framework/vue/index'
+        items: [
+          {
+            text: 'Vue 基础',
+            link: '/interview/framework/vue/index'
+          },
+          {
+            text: 'keep alive',
+            link: '/interview/framework/vue/keep-alive'
+          }
+        ]
       },
       {
         text: 'Angular',

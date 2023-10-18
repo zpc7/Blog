@@ -53,3 +53,4 @@ Webpack 是一个现代的前端构建工具，它在前端开发中起着重要
 ## 资料
 
 * [如何修改 node_modules 里的文件](https://mp.weixin.qq.com/s/nD9bbpvGA3pTHeLMmTyukQ)
+* [还不清楚webpack和vite原理？有这篇足够了！](https://juejin.cn/post/7267791228872671247?utm_source=gold_browser_extension#heading-0)

@@ -1,7 +1,7 @@
 # css
 * [浅谈逻辑选择器 is、where、not、has](https://mp.weixin.qq.com/s/QBEYNDJz54qcAo1IVZ45pg)
 * [重排(reflow)和重绘(repaint)](https://juejin.cn/post/6844904083212468238)
-* [10 分钟理解 BFC 原理](https://zhuanlan.zhihu.com/p/25321647)
+* [2023年，回看CSS方案生态全貌](https://juejin.cn/post/7285313335682695228)
 
 ## 左边定宽 右边自适应
 

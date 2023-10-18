@@ -5,7 +5,7 @@
 * [「React 深入」一文吃透React v18全部Api（1.3w+）](https://juejin.cn/post/7124486630483689485#heading-79)
 * [图解 history api 和 React Router 实现原理](https://mp.weixin.qq.com/s/cQCvbFz_pdpGdXIT_KlXjA)
 
-## 一个完整的React项目需要具备哪些东西
+## 完整React项目需要哪些?
 
 一个完整的 React 项目需要包括多个组成部分，以确保项目的组织、开发、构建和部署都能顺利进行。以下是一个典型的完整 React 项目可能需要的组成部分：
 
