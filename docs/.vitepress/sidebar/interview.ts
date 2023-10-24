@@ -22,11 +22,11 @@ export default [
     collapsed: true,
     items: [
       {
-        text: '基础',
+        text: '基础题',
         link: '/interview/javascript/basic'
       },
       {
-        text: '基础 ⭐️⭐️⭐️',
+        text: '中等难度题',
         link: '/interview/javascript/basic-hard'
       },
       {
