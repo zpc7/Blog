@@ -54,6 +54,10 @@ export default [
         link: '/interview/javascript/bind-implement'
       },
       {
+        text: '柯里化和偏函数',
+        link: '/interview/javascript/currying-and-partial-function'
+      },
+      {
         text: 'ES6 Class 转 ES5',
         link: '/interview/javascript/class-to-es5'
       }
