@@ -100,6 +100,10 @@ export default [
         link: '/interview/handwriting/to'
       },
       {
+        text: '防抖和节流',
+        link: '/interview/handwriting/debounce-and-throttle'
+      },
+      {
         text: '扁平化嵌套数组',
         link: '/interview/handwriting/flatten-deeply-nested-array'
       },

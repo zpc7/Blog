@@ -1,5 +1,7 @@
 # HTTP
 
+[前端请求大比拼：Fetch、Axios、Ajax、XHR](https://mp.weixin.qq.com/s/kxP4vwxuTALqmLVP-RoghA)
+
 ## HTTP/2 相比 1.0 有哪些重大改进？
 
 ## [axios取消请求总结](https://juejin.cn/post/7153831304042119198)
