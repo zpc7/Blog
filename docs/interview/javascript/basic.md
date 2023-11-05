@@ -323,6 +323,8 @@ Math.max(...numbers); // 9
 
 但是 ES6 的尾调用优化只在严格模式下开启，正常模式是无效的。
 
+ [阮一峰 尾调用优化](https://es6.ruanyifeng.com/#docs/function#%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96)
+
 ## 10. for...in 和 for...of 的区别?
 
 `for...in` 和 `for...of` 是 JavaScript 中用于遍历数据结构（比如对象、数组等）的两种不同的循环语句。它们有以下区别：
