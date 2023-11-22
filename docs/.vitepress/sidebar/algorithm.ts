@@ -10,6 +10,18 @@ export default [
       {
         text: '合并两个有序链表',
         link: '/algorithm/linked-list/merge-two-sorted-lists'
+      },
+      {
+        text: '链表的中间结点',
+        link: '/algorithm/linked-list/middle-of-the-linked-list'
+      },
+      {
+        text: '反转链表',
+        link: '/algorithm/linked-list/reverse-linked-list'
+      },
+      {
+        text: '相交链表',
+        link: '/algorithm/linked-list/intersection-of-two-linked-lists'
       }
     ]
   },

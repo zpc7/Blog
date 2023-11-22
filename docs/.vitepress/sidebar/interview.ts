@@ -314,5 +314,19 @@ export default [
         link: '/interview/design-pattern/publish-subscribe-and-observer'
       }
     ]
+  },
+  {
+    text: '一些面试示例',
+    collapsed: true,
+    items: [
+      {
+        text: '星巴克项目内',
+        link: '/interview/interview-examples/starbucks'
+      },
+      {
+        text: '字节模拟',
+        link: '/interview/interview-examples/byte-dance-mock'
+      }
+    ]
   }
 ];
