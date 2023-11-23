@@ -38,5 +38,14 @@ export default [
         link: '/algorithm/tree/maximum-depth-of-binary-tree'
       }
     ]
+  },
+  {
+    text: '其他',
+    items: [
+      {
+        text: '最长连续序列',
+        link: '/algorithm/other/longest-consecutive-sequence'
+      }
+    ]
   }
 ];
