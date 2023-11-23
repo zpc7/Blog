@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    dialog.normal-dialog {
+      border-radius: 6px;
+      background-color: aquamarine;
+    }
+
+    /* 设置蒙层的方式 */
+    dialog::backdrop {
+      background-color: rgba(red, green, blue, 0.8);
+      backdrop-filter: blur(1px);
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="openNormalDialog()">打开普通弹窗</button>
+  <button onclick="openModal()">打开模态弹窗</button>
+  <label>
+    使用 tab 切换焦点
+    <input type="input">
+  </label>
+
+  <dialog class="normal-dialog">
+    <div>弹窗</div>
+    <div>
+      <input type="text" />
+    </div>
+    <button onclick="closeDialog()">关闭弹窗</button>
+  </dialog>
+
+  <div style="margin-top: 30px;">渡一每日进阶CCC/浏览器原生弹窗.mp4</div>
+</body>
+<script>
+  const normalDialog = document.querySelector('dialog.normal-dialog');
+  function openNormalDialog() {
+    normalDialog.show()
+  }
+  function openModal() {
+    normalDialog.showModal()
+  }
+  function closeDialog() {
+    normalDialog.close()
+  }
+</script>
+
+</html>

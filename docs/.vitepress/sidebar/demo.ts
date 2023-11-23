@@ -27,6 +27,11 @@ export default [
         text: '利用延迟实现复杂动画',
         link: '/html/animation-impl-with-delay.html',
         target: '_self'
+      },
+      {
+        text: '浏览器原生弹窗',
+        link: '/html/browser-modal.html',
+        target: '_self'
       }
     ]
   }
