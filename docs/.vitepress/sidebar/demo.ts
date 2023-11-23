@@ -22,6 +22,11 @@ export default [
       {
         text: '行盒元素截断样式',
         link: '/demos/inline-split-style'
+      },
+      {
+        text: '利用延迟实现复杂动画',
+        link: '/html/animation-impl-with-delay.html',
+        target: '_self'
       }
     ]
   }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .desc {
+    margin-bottom: 20px;
+  }
+
+  .ball {
+    --delay: 0s;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    background-color: aquamarine;
+    animation: move linear forwards 1s;
+    animation-delay: var(--delay);
+    animation-play-state: paused
+  }
+
+  /* 可以随意自定义动画 */
+  @keyframes move {
+    0% {
+      transform: translateX(0) scale(1);
+      background-color: red;
+    }
+
+    50% {
+      transform: translateX(100px) scale(1.5);
+      background-color: black;
+    }
+
+    to {
+      transform: translateX(200px) scale(1);
+      background-color: aqua;
+    }
+  }
+</style>
+
+<body>
+  <div class="desc">通过 animation-delay 完成对动画的绑定</div>
+  <div class="ball"></div>
+  <input type='range' min="0" max="1" step="0.01" value="0" />
+</body>
+<script>
+  const ball = document.querySelector('.ball')
+  const input = document.querySelector('input')
+
+  input.oninput = function (e) {
+    // 设置 --delay
+    ball.style.setProperty('--delay', `-${e.target.value}s`)
+  }
+
+</script>
+
+</html>
