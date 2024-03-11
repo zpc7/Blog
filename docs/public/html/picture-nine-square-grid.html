@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图片九宫格</title>
+  <style>
+    .img-container {
+      width: 480px;
+      height: 480px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .img-item {
+      box-shadow: inset 0 0 0 1px #fff;
+      transition: 0.5s;
+      background-size: 480px 480px;
+      background-image: url(picture-nine-square-grid-bg.png);
+      background-position: var(--bgX, 0) var(--bgY, 0);
+      transform: translate(var(--disX, 0), var(--disY, 0));
+      display: inline-flex;
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+
+    .img-container:hover .img-item {
+      transform: translate(0, 0);
+      box-shadow: inset 0 0 0 0 #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="margin-bottom: 30px;">鼠标移入试试效果</div>
+  <div class="img-container">
+    <div class="img-item"></div>
+    <div class="img-item"></div>
+    <div class="img-item"></div>
+    <div class="img-item"></div>
+    <div class="img-item"></div>
+    <div class="img-item"></div>
+    <div class="img-item"></div>
+    <div class="img-item"></div>
+    <div class="img-item"></div>
+  </div>
+
+
+  <div style="margin-top: 30px;">渡一AAA/图片九宫格.mp4</div>
+
+  <script>
+    const items = document.querySelectorAll('.img-item');
+
+    for (let i = 0; i < items.length; i++) {
+      const r = Math.floor(i / 3) // 行
+      const c = i % 3; // 列
+      console.log('@@@r:', r);
+      console.log('@@@c:', c);
+
+      const bgX = -c * 100 + '%';
+      const bgY = -r * 100 + '%';
+      const disX = (c - 1) * 20 + 'px';
+      const disY = (r - 1) * 20 + 'px';
+      items[i].style.setProperty('--bgX', bgX)
+      items[i].style.setProperty('--bgY', bgY)
+      items[i].style.setProperty('--disX', disX)
+      items[i].style.setProperty('--disY', disY)
+
+    }
+  </script>
+</body>
+
+</html>

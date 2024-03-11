@@ -32,6 +32,11 @@ export default [
         text: '浏览器原生弹窗',
         link: '/html/browser-modal.html',
         target: '_self'
+      },
+      {
+        text: '图片九宫格',
+        link: '/html/picture-nine-square-grid.html',
+        target: '_self'
       }
     ]
   }
