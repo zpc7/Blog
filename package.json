@@ -5,10 +5,10 @@
     "docs:preview": "vitepress preview docs"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "devDependencies": {
     "less": "^4.2.0",
-    "vitepress": "1.0.0-rc.44"
+    "vitepress": "1.0.0-rc.45"
   }
 } 
