@@ -50,6 +50,10 @@ export default [
         link: '/snippets/terminal-style'
       },
       {
+        text: 'zsh 给终端主题的命令添加时间',
+        link: '/snippets/zsh-date-time'
+      },
+      {
         text: '统计文件夹下文件数量',
         link: '/snippets/statistics-file'
       },

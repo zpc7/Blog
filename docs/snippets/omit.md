@@ -1,6 +1,6 @@
-## 手动实现 `lodash` 的 `omit`
+# 手动实现 `lodash` 的 `omit`
 
-### 忽略单个 `key`
+## 忽略单个 `key`
 
 ```ts
 // 注意这里, keyToOmit 必须放在前面, 否则会报错如下:
@@ -26,7 +26,7 @@ console.log(objectFromFrontend);
 // { _id: 5, data: { some: 1, useful: 2, data: 3 } }
 ```
 
-### 忽略多个 `key`
+## 忽略多个 `key`
 
 ```ts
 const omit = (keysToOmit: string[], originalObj = {}) =>

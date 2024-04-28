@@ -37,6 +37,10 @@ export default [
         text: '图片九宫格',
         link: '/html/picture-nine-square-grid.html',
         target: '_self'
+      },
+      {
+        text: 'SAM 图像分割本地大模型',
+        link: 'https://sam.dpcr7.top/',
       }
     ]
   }
