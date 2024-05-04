@@ -18,6 +18,7 @@ title: Blog 主页
   + [更改远程仓库的 URL](https://docs.github.com/cn/github/using-git/changing-a-remotes-url)
   + [忽略文件(仅为本机设置忽略?)](https://docs.github.com/cn/github/using-git/ignoring-files)
   + [创建有多个作者的提交](https://docs.github.com/cn/github/committing-changes-to-your-project/creating-a-commit-with-multiple-authors)
+  + [一个项目push到多个远程Git仓库](https://segmentfault.com/a/1190000011294144)
   </details>
 
 * JS/TS
