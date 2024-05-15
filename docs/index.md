@@ -7,9 +7,9 @@ title: Home
 hero:
   name: PC
   text: '随便写写, 以便查阅'
-  tagline: You reap what you sow
+  tagline: '记录 | 随笔 | 笔记'
   image:
-    src: /home/cover.png
+    src: /home/cover.webp
     alt: cover
   actions:
     - theme: brand

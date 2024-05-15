@@ -19,12 +19,12 @@ export default defineConfig({
       provider: 'local'
     },
     outline: 'deep',
-    // outlineTitle: '大纲',
+    outlineTitle: '页面大纲',
     nav: [
       // { text: 'Home', link: '/' },
       { text: 'Blog', link: '/blog/index' },
-      { text: 'Snippets', link: '/snippets/index' },
-      { text: 'Demos', link: '/demos/mouse-hover' },
+      { text: 'Snippet', link: '/snippets/index' },
+      { text: 'Demo', link: '/demos/mouse-hover' },
       {
         text: 'More',
         items: [
