@@ -45,5 +45,5 @@ features:
     link: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions
   - title: vitepress
     details: vitepress 官方文档
-    link: https://vitepress.dev/
+    link: https://vitepress.dev/zh/
 ---

@@ -28,9 +28,7 @@ export default defineConfig({
       {
         text: 'More',
         items: [
-          { text: '面试指南', link: '/interview/index' },
-          { text: 'api-examples', link: '/more/api-examples' },
-          { text: 'markdown-examples', link: '/more/markdown-examples' },
+          { text: '前端面试', link: '/interview/index' },
           { text: '算法', link: '/algorithm/index' },
           { text: 'Devops', link: '/devops/index' }
         ]
