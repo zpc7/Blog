@@ -6,4 +6,11 @@
   /* 自定义 首页 hero name 的颜色 */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+
+  --vp-layout-max-width: 1640px;
+}
+
+/* 中间内容区域的宽度 */
+.VPDoc.has-aside .content-container {
+  max-width: 100% !important;
 }

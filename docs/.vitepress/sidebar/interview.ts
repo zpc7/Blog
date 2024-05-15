@@ -255,8 +255,12 @@ export default [
         link: '/interview/engineering/module',
         items: [
           {
-            text: 'CommonJS 输出题和 require 伪代码',
+            text: 'CommonJS require伪代码',
             link: '/interview/engineering/commonjs-output'
+          },
+          {
+            text: 'ESModule 符号绑定',
+            link: '/interview/engineering/esm-symbol-link'
           }
         ]
       },

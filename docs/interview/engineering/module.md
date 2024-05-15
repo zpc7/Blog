@@ -19,11 +19,13 @@
 
 `defer` 要等到整个页面在内存中正常渲染结束（DOM 结构完全生成，以及其他脚本执行完成），才会执行； `async` 一旦下载完，渲染引擎就会中断渲染，执行这个脚本以后，再继续渲染。一句话， `defer` 是“渲染完再执行”， `async` 是“下载完就执行”。另外，如果有多个 `defer` 脚本，会按照它们在页面出现的顺序加载，而多个 `async` 脚本是不能保证加载顺序的。
 
-## [ES6 模块与 CommonJS 模块的差异](https://wangdoc.com/es6/module-loader#es6-%E6%A8%A1%E5%9D%97%E4%B8%8E-commonjs-%E6%A8%A1%E5%9D%97%E7%9A%84%E5%B7%AE%E5%BC%82)
+## [ES6 模块与 CJS 模块的差异](https://wangdoc.com/es6/module-loader#es6-%E6%A8%A1%E5%9D%97%E4%B8%8E-commonjs-%E6%A8%A1%E5%9D%97%E7%9A%84%E5%B7%AE%E5%BC%82)
 
-* CommonJS 模块输出的是一个`值的拷贝`，ES6 模块输出的是`值的引用`。
-* CommonJS 模块是运行时加载，ES6 模块是编译时输出接口。
-* CommonJS 模块的require()是同步加载模块，ES6 模块的import命令是异步加载，有一个独立的模块依赖的解析阶段。
+* CJS 是社区标准, ESM 是官方标准
+* CJS 是使用 API 实现的模块化, ESM 是使用新语法实现的模块化
+* CJS 仅在 node 环境中支持, ESM 各种环境都支持
+* CJS 是动态的依赖, 同步执行, ESM 既支持动态, 也支持静态, 动态依赖是异步执行的
+* CJS 只是普通函数的调用和赋值, ESM 导入时有**符号绑定** 
 
 ## antd 怎么产出三种规范？
 
