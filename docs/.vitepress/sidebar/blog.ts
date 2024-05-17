@@ -26,10 +26,6 @@ export default [
         link: '/blog/SkillPoints/千位分隔符'
       },
       {
-        text: 'Git 操作小技巧',
-        link: '/blog/SkillPoints/GitTips-Vol-1'
-      },
-      {
         text: 'Linux 中的 cp 命令',
         link: '/blog/SkillPoints/Linux-cp'
       },
@@ -56,14 +52,31 @@ export default [
       {
         text: '基于 node 制作命令行工具',
         link: '/blog/SkillPoints/Node-cli-tool'
-      },
-
+      }
     ]
   },
   {
-    text:'翻译',
+    text: 'Git/GitHub',
+    collapsed: false,
+    items: [
+      {
+        text: 'guide',
+        link: '/blog/git+github/index'
+      },
+      {
+        text: '操作技巧',
+        link: '/blog/git+github/GitTips-Vol-1'
+      },
+      {
+        text: '配置多个 remote',
+        link: '/blog/git+github/multiple-remote'
+      }
+    ]
+  },
+  {
+    text: '翻译',
     collapsed: true,
-    items:[
+    items: [
       {
         text: '使用 React.lazy 和 @loadable/component 在 React 中拆分代码',
         link: '/blog/Translation/React.lazy+Suspense'

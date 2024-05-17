@@ -56,7 +56,7 @@ export default [
       {
         text: '统计文件夹下文件数量',
         link: '/snippets/statistics-file'
-      },
+      }
     ]
   },
 ];

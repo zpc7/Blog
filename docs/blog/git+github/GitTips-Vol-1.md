@@ -32,7 +32,7 @@
 
 显示某次提交的内容变化
 
-## 重置文件
+## reset 文件
 
 ### git reset --hard [commit hash]
 
@@ -108,7 +108,7 @@ xargs 的作用是将参数列表转换成小块分段传递给其他命令
 设置本次 stash 操作的备注  
 `git stash apply` 和 `git stash pop`的区别 : 前者不会从 stash list 中 中移除,移除请使用`git stash drop`
 
-## 修改最近一次提交
+## 修改最近一次提交 ⭐
 
 `git commit --amend`
 
@@ -138,9 +138,16 @@ xargs 的作用是将参数列表转换成小块分段传递给其他命令
 ## git push -u origin develop
 
 等价 `git push --set-upstream origin develop` (切出新分支,第一次执行 push 操作时候用到)  
--u 的意思是将 origin 的 develop 分支设为本地当前仓库的上游。拉取代码时就可以直接执行 git pull，而不必添加分支参数)
+-u 的意思是将 origin 的 develop 分支设为本地当前仓库的上游。拉取代码时就可以直接执行 git pull，而不必添加分支参数
 
 ## git push origin local_branch:remote_branch
 
 推送本地分支到远程分支，local_branch 必须为你本地存在的分支，remote_branch 为远程分支，如果 remote_branch 不存在则会自动创建分支。
 类似，`git push origin :remote_branch`，local_branch 留空的话则是删除远程 remote_branch 分支
+
+## 忽略大小写 ⭐
+
+```bash
+git config core.ignorecase true
+# 全局设置: git config --global core.ignorecase true
+```
