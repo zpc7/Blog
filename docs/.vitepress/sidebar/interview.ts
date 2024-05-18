@@ -75,9 +75,8 @@ export default [
     ]
   },
   {
-    text: '手写题(TODO)',
+    text: '手写题',
     collapsed: false,
-    link: '/interview/typescript/index',
     items: [
       {
         text: '手写100以内的质数',
@@ -88,15 +87,15 @@ export default [
         link: '/interview/handwriting/array-to-tree'
       },
       {
-        text: '树形结构转扁平结构',
+        text: '树形结构转扁平结构 🚧',
         link: '/interview/handwriting/tree-to-array'
       },
       {
-        text: '克隆',
+        text: '克隆 🚧',
         link: '/interview/handwriting/clone'
       },
       {
-        text: '排序',
+        text: '排序 🚧',
         link: '/interview/handwriting/to'
       },
       {
@@ -114,6 +113,16 @@ export default [
       {
         text: '实现链式调用和延迟执行',
         link: '/interview/handwriting/chain-call-and-delay-execution'
+      },
+      {
+        text: 'lodash',
+        collapsed: false,
+        items: [
+          {
+            text: 'get',
+            link: '/interview/handwriting/lodash/get'
+          }
+        ]
       }
     ]
   },
