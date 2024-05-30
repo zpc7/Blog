@@ -1,4 +1,8 @@
 # 前端工程化
+<Badge type="info" text="单元测试" />
+<Badge type="tip" text="CI CD" />
+<Badge type="warning" text="webpack" />
+<Badge type="danger" text="pnpm" />
 
 - [PandlyShen 的个人主页](https://juejin.cn/user/3632442148923006/posts)
 

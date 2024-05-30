@@ -1,8 +1,18 @@
 # 面试
 
+- [Technical-Focus 面经合集](https://github.com/zpc7/Technical-Focus/issues/1)
+
 ## 初衷
 
 收录优秀的前端面试题目或讲解资料, 方便每次跳槽时用, 或平时巩固基础查漏补缺
+
+## 面试经验(非技术)
+
+- [面试完国内 5 家中大厂，我发现了…](https://mp.weixin.qq.com/s/egmioB9R2M6ZsYeu16Vd_Q)
+
+## 未分类
+
+- [利用 git bisect 二分查找定位出问题的 commit](https://mp.weixin.qq.com/s/elY7VNoFw9X34yiVhfl5MA)
 
 ## 声明
 

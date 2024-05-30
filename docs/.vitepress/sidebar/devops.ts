@@ -38,12 +38,16 @@ export default [
     ]
   },
   {
-    text: '操作系统',
+    text: '操作系统 Linux',
     collapsed: true,
     items: [
       {
         text: 'Introduction',
         link: '/devops/os/index'
+      },
+      {
+        text: 'Linux 目录解析',
+        link: '/devops/os/linux-directory'
       },
       {
         text: '安装自己的 Linux 操作系统',

@@ -1,5 +1,8 @@
 # 函数防抖和节流
 
+- [JavaScript 专题之跟着 underscore 学防抖](https://github.com/mqyqingfeng/Blog/issues/22)
+- [JavaScript 专题之跟着 underscore 学节流](https://github.com/mqyqingfeng/Blog/issues/26#issue-236763046)
+
 ## 防抖
 
 防抖 (Debouncing) 的含义是指在一定时间内，多次触发同一个事件，只执行`最后一次`操作。
@@ -8,15 +11,15 @@
 
 ```js
 function debounce(fn, delay) {
-  let timer = null
-  return function(...args) {
+  let timer = null;
+  return function (...args) {
     if (timer) {
-      clearTimeout(timer)
+      clearTimeout(timer);
     }
     timer = setTimeout(() => {
-      fn.apply(this, args)
-    }, delay)
-  }
+      fn.apply(this, args);
+    }, delay);
+  };
 }
 ```
 
@@ -29,7 +32,7 @@ function debounce(fn, delay) {
 ```js
 function throttle(func, delay) {
   let timer = null;
-  return function(...args) {
+  return function (...args) {
     if (!timer) {
       timer = setTimeout(() => {
         func.apply(this, args);

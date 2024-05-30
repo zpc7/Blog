@@ -66,8 +66,11 @@ export default [
   {
     text: 'TypeScript',
     collapsed: true,
-    link: '/interview/typescript/index',
     items: [
+      {
+        text: 'Index',
+        link: '/interview/typescript/index',
+      },
       {
         text: '实现 Pick',
         link: '/interview/typescript/pick'
@@ -165,6 +168,10 @@ export default [
     collapsed: true,
     items: [
       {
+        text: 'Index',
+        link: '/interview/browser-network/index'
+      },
+      {
         text: 'JS 执行机制 / Event Loop',
         link: '/interview/browser-network/event-loop'
       },
@@ -257,8 +264,11 @@ export default [
   {
     text: '前端工程化',
     collapsed: true,
-    link: '/interview/engineering/index',
     items: [
+      {
+        text: 'Index',
+        link: '/interview/engineering/index',
+      },
       {
         text: '模块化',
         link: '/interview/engineering/module',
@@ -304,6 +314,10 @@ export default [
     collapsed: true,
     items: [
       {
+        text: 'Index',
+        link: '/interview/opt-secure/index'
+      },
+      {
         text: '性能优化',
         link: '/interview/opt-secure/opt'
       },
@@ -316,8 +330,11 @@ export default [
   {
     text: '设计模式',
     collapsed: true,
-    link: '/interview/design-pattern/index',
     items: [
+      {
+        text: 'Index',
+        link: '/interview/design-pattern/index'
+      },
       {
         text: '单例模式',
         link: '/interview/design-pattern/singleton'
