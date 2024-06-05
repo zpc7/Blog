@@ -356,6 +356,10 @@ export default [
       {
         text: '字节模拟',
         link: '/interview/interview-examples/byte-dance-mock'
+      },
+      {
+        text: '招行',
+        link: '/interview/interview-examples/cmb'
       }
     ]
   }
