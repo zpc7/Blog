@@ -4,12 +4,15 @@
 
 * [ ] 主流方案有哪些？
 * [ ] 主应用无刷新加载子应用的原理？
+* [探探各个微前端框架](https://mp.weixin.qq.com/s/8T3YNpIrA-FW0hPloYgTtQ)
 
 ## 参考文章
 
 ### webpack5 module federation
+
 * [最详细的Module Federation的实现原理讲解](https://juejin.cn/post/7151281452716392462)
 * [一文通透讲解webpack5 module federation](https://juejin.cn/post/7048125682861703181#heading-46)
+* [【第3044期】详解Module Federation的实现原理](https://mp.weixin.qq.com/s/1dUTODMMuNufilEpB1d8_Q)
 
 ### 沙箱
 

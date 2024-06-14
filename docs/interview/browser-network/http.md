@@ -1,10 +1,12 @@
 # HTTP
 
-[前端请求大比拼：Fetch、Axios、Ajax、XHR](https://mp.weixin.qq.com/s/kxP4vwxuTALqmLVP-RoghA)
+* [axios取消请求总结](https://juejin.cn/post/7153831304042119198)
+* [前端请求大比拼：Fetch、Axios、Ajax、XHR](https://mp.weixin.qq.com/s/kxP4vwxuTALqmLVP-RoghA)
+* [面试官：Fetch API发起的请求可以被暂停吗？](https://mp.weixin.qq.com/s/Xw2udl5mUyGsQUtp6n1xNw)
 
 ## HTTP/2 相比 1.0 有哪些重大改进？
 
-## [axios取消请求总结](https://juejin.cn/post/7153831304042119198)
+// TODO:
 
 ## `Fetch` 和 `XHR` 区别?
 

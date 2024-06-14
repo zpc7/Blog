@@ -176,6 +176,10 @@ export default [
         link: '/interview/browser-network/event-loop'
       },
       {
+        text: 'requestIdleCallback / RAF',
+        link: '/interview/browser-network/requestIdleCallback-requestAnimationFrame'
+      },
+      {
         text: '同源策略+跨域处理',
         link: '/interview/browser-network/cross-domain'
       },
@@ -186,10 +190,6 @@ export default [
       {
         text: 'cookie/session/storage',
         link: '/interview/browser-network/storage'
-      },
-      {
-        text: 'requestIdleCallback / requestAnimationFrame',
-        link: '/interview/browser-network/requestIdleCallback-requestAnimationFrame'
       },
       {
         text: '缓存',
@@ -360,7 +360,15 @@ export default [
       {
         text: '招行',
         link: '/interview/interview-examples/cmb'
-      }
+      },
+      {
+        text: '巽风科技',
+        link: '/interview/interview-examples/xunfeng'
+      },
+      {
+        text: '其他',
+        link: '/interview/interview-examples/other'
+      },
     ]
   }
 ];

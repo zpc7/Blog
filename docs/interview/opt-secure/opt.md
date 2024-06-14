@@ -21,6 +21,7 @@
 * [Web Performance Tips ⚡](https://www.webperf.tips/)
 * [不一样的"代码拆分"+"预加载"实现应用性能及体验兼得](https://mp.weixin.qq.com/s/KWYJjqwAxtOLZNnMN6J_-g)
    > 把动态加载改造为预加载, 减少组件加载过程的耗时
+* [3.40秒到231.84毫秒，我用Performance面板分析性能瓶颈全流程](https://mp.weixin.qq.com/s/ONdNyvaL1Uo-iSNN3F-R6w)
 
 ## 其他
 
