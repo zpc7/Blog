@@ -1,9 +1,10 @@
 # 反转链表
+[反转链表](https://leetcode.cn/problems/reverse-linked-list/description/)
 
 ## 推荐题解
 
-- [206. 反转链表（双指针，清晰图解）](https://leetcode.cn/problems/reverse-linked-list/solutions/2361282/206-fan-zhuan-lian-biao-shuang-zhi-zhen-r1jel/)
-- [动画演示+多种解法 206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/solutions/36710/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/)
+* [206. 反转链表（双指针，清晰图解）](https://leetcode.cn/problems/reverse-linked-list/solutions/2361282/206-fan-zhuan-lian-biao-shuang-zhi-zhen-r1jel/)
+* [动画演示+多种解法 206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/solutions/36710/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/)
 
 ## 双指针迭代
 

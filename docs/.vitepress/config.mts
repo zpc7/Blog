@@ -30,7 +30,8 @@ export default defineConfig({
         items: [
           { text: '前端面试', link: '/interview/index' },
           { text: '算法', link: '/algorithm/index' },
-          { text: 'Devops', link: '/devops/index' }
+          { text: 'Devops', link: '/devops/index' },
+          { text: 'Other', link: '/other/index' }
         ]
       }
     ],

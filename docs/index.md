@@ -5,9 +5,9 @@ layout: home
 title: Home
 
 hero:
-  name: PC
-  text: '随便写写, 以便查阅'
-  tagline: '记录 | 随笔 | 笔记'
+  name: PCC
+  text: '记录 | 随笔 | 笔记'
+  tagline: '行动是治愈恐惧的良药, 拖延是滋生懦弱的病菌'
   image:
     src: /home/cover.webp
     alt: cover

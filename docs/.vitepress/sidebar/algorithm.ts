@@ -8,16 +8,16 @@ export default [
     collapsed: false,
     items: [
       {
-        text: '合并两个有序链表',
-        link: '/algorithm/linked-list/merge-two-sorted-lists'
-      },
-      {
         text: '链表的中间结点',
         link: '/algorithm/linked-list/middle-of-the-linked-list'
       },
       {
         text: '反转链表',
         link: '/algorithm/linked-list/reverse-linked-list'
+      },
+      {
+        text: '合并两个有序链表',
+        link: '/algorithm/linked-list/merge-two-sorted-lists'
       },
       {
         text: '相交链表',
@@ -36,6 +36,19 @@ export default [
       {
         text: '二叉树的最大深度',
         link: '/algorithm/tree/maximum-depth-of-binary-tree'
+      },
+      {
+        text: '路径总和',
+        link: '/algorithm/tree/path-sum'
+      }
+    ]
+  },
+  {
+    text: '动态规划',
+    items: [
+      {
+        text: '最长连续序列',
+        link: '/algorithm/dp/longest-consecutive-sequence'
       }
     ]
   },
