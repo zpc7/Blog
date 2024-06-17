@@ -231,12 +231,12 @@ class MyPromise {
   }
 
   #isPromiseLike() {
-    // TODO:
+    // 下一章节实现
     return false;
   }
 
   #runMicroTask(fn) {
-    // TODO:
+    // 下一章节实现
     fn();
   }
 

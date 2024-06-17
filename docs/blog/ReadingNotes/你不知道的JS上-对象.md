@@ -141,7 +141,7 @@ var myObject = {
         this._a_ = val * 2;
     }
 };
-//TODO
+
     myObject.a = 2;
     myObject.a; // 4
 ```

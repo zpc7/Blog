@@ -173,7 +173,7 @@ test(); // 0
 test.apply(obj); // 1
 ```
 
-`apply、call、bind`三者的区别 TODO:
+[`apply、call、bind` 三者的区别](/interview/javascript/call-apply-bind)
 
 ## 箭头函数
 

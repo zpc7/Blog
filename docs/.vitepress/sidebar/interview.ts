@@ -79,7 +79,7 @@ export default [
   },
   {
     text: '手写题',
-    collapsed: false,
+    collapsed: true,
     items: [
       {
         text: '手写100以内的质数',
@@ -218,7 +218,7 @@ export default [
     collapsed: true,
     items: [
       {
-        text: 'React',
+        text: '⚛️ React',
         items: [
           {
             text: 'React 及相关 API',
@@ -233,7 +233,7 @@ export default [
             link: '/interview/framework/react/fiber'
           },
           {
-            text: 'React 18',
+            text: 'React 18/19',
             link: '/interview/framework/react/react18'
           }
         ]
