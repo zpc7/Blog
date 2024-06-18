@@ -229,7 +229,7 @@ export default [
             link: '/interview/framework/react/refs'
           },
           {
-            text: 'React Fiber',
+            text: 'Fiber 和虚拟 DOM',
             link: '/interview/framework/react/fiber'
           },
           {

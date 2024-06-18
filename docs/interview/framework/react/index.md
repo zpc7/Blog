@@ -6,9 +6,37 @@
 - [「React 深入」一文吃透 React v18 全部 Api（1.3w+）](https://juejin.cn/post/7124486630483689485#heading-79)
 - [图解 history api 和 React Router 实现原理](https://mp.weixin.qq.com/s/cQCvbFz_pdpGdXIT_KlXjA)
 
-## Hooks 为什么要放在函数组件的顶层?
+## setState 到底是同步还是异步?
 
-TODO:
+- [🌟 深入了解 setState 和 useState](https://juejin.cn/post/7358306245349539866)
+- [🌟 useState官方: setState传递函数和普通值有区别](https://zh-hans.react.dev/reference/react/useState#updating-state-based-on-the-previous-state)
+- [个人: codeSandbox 测试地址](https://codesandbox.io/p/sandbox/practical-field-93kprs?file=%2Fsrc%2FApp.tsx%3A76%2C28)
+- [主要分析18版本之前的setState表现](https://juejin.cn/post/7062162951108558855)
+
+总结:  
+- React18 之前
+
+    在 React18 之前，setState 在不同情况下可以表现为同步或异步。
+
+    在 Promise 的状态更新、js 原生事件、setTimeout、setInterval 中是同步的。  
+    在 React 的合成事件、生命周期函数中是异步的。
+
+    如果 setState 是同步的，就会造成执行几次 setState，就渲染几次页面，造成严重的性能消耗。
+
+- React18
+
+    在 React18 中，setState 在任何地方执行都是异步的。目的：实现状态的批处理。
+
+## Hooks 为什么要放在函数组件的顶层?
+- [官方 hook的规则](https://zh-hans.react.dev/reference/rules/rules-of-hooks)
+- [为什么react中的hooks都要放在顶部？](https://juejin.cn/post/7223586612927971388)
+
+React依赖于 **Hook 调用顺序** 来保持组件状态的一致性。Hooks的调用顺序必须在每次渲染时保持稳定，这样React才能正确地捕捉和记住每个组件状态的变化。
+
+从源码的角度来说，React会在内部创建一个名为 `Hooks` 的数据结构来追踪每个组件的状态。  
+在函数组件中调用Hook时，React会根据Hook的类型将其添加到当前组件的Hooks链表中。  
+React会将这些Hooks存储在Fiber节点的“memoizedState”字段中，以便在下一次渲染时使用。React就可以确定哪个状态应该与哪个组件关联，并且能够正确地更新UI。  
+当在条件语句中使用hooks时可能会导致前后两次链表不同，从而导致错误
 
 ## 完整 React 项目需要哪些?
 
@@ -88,32 +116,6 @@ TODO:
     - 如有需要，支持多语言国际化和本地化。
 
 这些是一个完整 React 项目可能需要的主要组成部分。根据项目的规模和要求，还可以添加其他功能和工具。
-
-## 如何理解 React 的虚拟 dom
-
-React 的虚拟 DOM（Virtual Document Object Model）是一种用于提高页面渲染性能的技术。它是 React 用来管理和表示页面结构的一种轻量级副本，存在于内存中。虚拟 DOM 通过比较算法将对虚拟 DOM 的更改与实际 DOM 进行最小化的操作，从而优化了页面渲染过程。
-
-理解 React 的虚拟 DOM 可以分为以下几个方面：
-
-1.  **DOM 操作的成本**：
-    直接操作实际的 DOM 元素可能非常昂贵，因为它会触发浏览器的重新渲染和重排，这会消耗大量的资源。虚拟 DOM 的出现是为了减少这种成本。
-
-2.  **虚拟 DOM 结构**：
-    虚拟 DOM 是一个以 JavaScript 对象形式表示的页面结构，它与实际 DOM 一一对应。每个虚拟 DOM 元素包含了标签名、属性、子元素等信息。
-
-3.  **构建虚拟 DOM**：
-    当你在 React 组件中编写 JSX 代码时，实际上是在构建虚拟 DOM。React 使用这些虚拟 DOM 元素来描述页面的结构。
-
-4.  **比较和更新**：
-    当组件的状态或属性发生变化时，React 不会立即直接操作实际 DOM。相反，它会首先生成新的虚拟 DOM，并通过比较算法（称为“协调算法”）比较新旧虚拟 DOM 之间的差异。
-
-5.  **最小化 DOM 操作**：
-    比较算法会找出需要更新的部分，并将这些更改应用到实际 DOM 上，从而最小化了实际 DOM 操作的次数，减少性能开销。
-
-6.  **批量更新**：
-    React 会将多个状态变化合并为一次更新，以避免多次触发不必要的实际 DOM 操作。
-
-总的来说，React 的虚拟 DOM 是一种优化性能的策略，它通过在内存中维护一个虚拟的页面结构，将实际 DOM 操作的成本降低到最小。这使得 React 能够以一种更高效的方式处理页面更新和渲染，提供更好的用户体验。
 
 ## key 的作用及设置原则
 
