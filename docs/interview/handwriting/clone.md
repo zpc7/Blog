@@ -19,6 +19,7 @@ const shallowClone = {
 
 // 修改浅克隆后的对象中的非引用属性不会影响原始对象
 shallowClone.a = 100;
+// 修改引用属性会影响原始对象
 shallowClone.b.c = 200;
 
 console.log(originalObject); // { a: 1, b: { c: 200 } }
@@ -38,6 +39,7 @@ const shallowClone = Object.assign({}, originalObject);
 
 // 修改浅克隆后的对象中的非引用属性不会影响原始对象
 shallowClone.a = 100;
+// 修改引用属性会影响原始对象
 shallowClone.b.c = 200;
 
 console.log(originalObject); // { a: 1, b: { c: 200 } }
@@ -86,7 +88,9 @@ function deepClone(obj) {
 }
 ```
 
-弊端: 无法处理循环引用
+弊端: 无法处理循环引用  
+
+`hasOwnProperty`: 方法返回一个布尔值，表示对象自有属性（而不是继承来）中是否具有指定的属性。与 in 运算符不同的是，该方法不会在对象原型链中检查指定的属性。
 
 ### 递归-解决循环引用
 

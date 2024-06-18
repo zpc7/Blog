@@ -3,7 +3,7 @@
 * [前端构建工具发展史](https://mp.weixin.qq.com/s/15YxshMsZ7FJyLUfXZHqCQ)
 * [如何修改 node_modules 里的文件](https://mp.weixin.qq.com/s/nD9bbpvGA3pTHeLMmTyukQ)
 * [还不清楚webpack和vite原理？有这篇足够了！](https://juejin.cn/post/7267791228872671247?utm_source=gold_browser_extension#heading-0)
-- [Vite为什么比Webpack快 🌟](https://mp.weixin.qq.com/s/f5D8ZEbPhQbwDrUCwgezTQ)
+* [Vite为什么比Webpack快 🌟](https://mp.weixin.qq.com/s/f5D8ZEbPhQbwDrUCwgezTQ)
 
 ## webpack的作用
 
@@ -52,3 +52,13 @@ Webpack 是一个现代的前端构建工具，它在前端开发中起着重要
 * 使用代码分割技术，可以将应用程序的代码切分成多个 Chunks，从而实现按需加载和更好的性能。
 
 总之，Bundles 和 Chunks 都是 Webpack 中与代码分割和打包相关的概念，它们共同为前端应用程序的性能和加载速度提供了更好的解决方案。
+
+## 代码拆分有哪些方式?
+
+* [code-splitting](https://webpack.docschina.org/guides/code-splitting/)
+1. `SplitChunksPlugin`插件可以将公共的依赖模块提取到已有的入口 chunk 中，或者提取到一个新生成的 chunk。
+2. 可以使用import(''), 动态导入
+
+## webpack externals的使用场景？
+
+* [官方: 外部扩展(Externals)](https://webpack.docschina.org/configuration/externals/)

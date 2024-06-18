@@ -1,10 +1,9 @@
 # React 及相关 API
 
-- [自创: React.memo](https://github.com/zpc7/Blog/blob/master/SkillPoints/React-PureComponent+memo.md)
-- [自创: useMemo + useCallback](https://github.com/zpc7/Blog/blob/master/SkillPoints/React-useCallback+useMemo.md)
+- [自创: React.memo](/blog/SkillPoints/React-PureComponent+memo.md)
+- [自创: useMemo + useCallback](/blog/SkillPoints/React-useCallback+useMemo.md)
 - [JavaScript 和 React 中的记忆化](https://mp.weixin.qq.com/s/vo4u2NGLRSZTpI5e0InjVg)
 - [「React 深入」一文吃透 React v18 全部 Api（1.3w+）](https://juejin.cn/post/7124486630483689485#heading-79)
-- [图解 history api 和 React Router 实现原理](https://mp.weixin.qq.com/s/cQCvbFz_pdpGdXIT_KlXjA)
 
 ## setState 到底是同步还是异步?
 
@@ -37,6 +36,9 @@ React依赖于 **Hook 调用顺序** 来保持组件状态的一致性。Hooks�
 在函数组件中调用Hook时，React会根据Hook的类型将其添加到当前组件的Hooks链表中。  
 React会将这些Hooks存储在Fiber节点的“memoizedState”字段中，以便在下一次渲染时使用。React就可以确定哪个状态应该与哪个组件关联，并且能够正确地更新UI。  
 当在条件语句中使用hooks时可能会导致前后两次链表不同，从而导致错误
+
+## Router
+- [🌟 图解 history api 和 React Router 实现原理](https://mp.weixin.qq.com/s/cQCvbFz_pdpGdXIT_KlXjA)
 
 ## 完整 React 项目需要哪些?
 

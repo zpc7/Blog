@@ -94,7 +94,7 @@ export default [
         link: '/interview/handwriting/tree-to-array'
       },
       {
-        text: '克隆 🚧',
+        text: '克隆',
         link: '/interview/handwriting/clone'
       },
       {
