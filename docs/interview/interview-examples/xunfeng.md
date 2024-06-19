@@ -146,3 +146,12 @@
     ::: details 参考答案
     个人文章:[实现链式调用和延迟执行](/interview/handwriting/chain-call-and-delay-execution)
     :::
+
+## 二面-视频面试
+
+1. React Fiber 架构
+2. websocket 怎么断线重连?
+3. webpack loader和plugin的区别? style-loader 的用处?
+4. 沙箱的实现?
+5. 小程序怎么避免体积过大?
+6. 移动端 0.5px 的实现?

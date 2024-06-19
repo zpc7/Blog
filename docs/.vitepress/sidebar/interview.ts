@@ -239,6 +239,19 @@ export default [
         ]
       },
       {
+        text: '⚛️ React 渡一',
+        items: [
+          {
+            text: 'React 整体架构',
+            link: '/interview/framework/react-duyi/React 整体架构'
+          },
+          {
+            text: 'React 渲染流程',
+            link: '/interview/framework/react-duyi/React 渲染流程'
+          },
+        ]
+      },
+      {
         text: 'Vue',
         items: [
           {
@@ -364,6 +377,10 @@ export default [
       {
         text: '巽风科技',
         link: '/interview/interview-examples/xunfeng'
+      },
+      {
+        text: '联想',
+        link: '/interview/interview-examples/lenovo'
       },
       {
         text: '其他',
