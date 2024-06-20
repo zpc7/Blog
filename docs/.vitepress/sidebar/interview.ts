@@ -257,6 +257,22 @@ export default [
             text: 'MessageChannel',
             link: '/interview/framework/react-duyi/MessageChannel'
           },
+          {
+            text: 'Scheduler调度普通任务',
+            link: '/interview/framework/react-duyi/Scheduler调度普通任务'
+          },
+          {
+            text: 'Scheduler调度延时任务',
+            link: '/interview/framework/react-duyi/Scheduler调度延时任务'
+          },
+          {
+            text: '最小堆',
+            link: '/interview/framework/react-duyi/最小堆'
+          },
+          {
+            text: 'React中的位运算',
+            link: '/interview/framework/react-duyi/React中的位运算'
+          },
         ]
       },
       {
