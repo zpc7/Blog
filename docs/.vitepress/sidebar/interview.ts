@@ -249,6 +249,14 @@ export default [
             text: 'React 渲染流程',
             link: '/interview/framework/react-duyi/React 渲染流程'
           },
+          {
+            text: 'Fiber双缓冲',
+            link: '/interview/framework/react-duyi/Fiber双缓冲'
+          },
+          {
+            text: 'MessageChannel',
+            link: '/interview/framework/react-duyi/MessageChannel'
+          },
         ]
       },
       {
