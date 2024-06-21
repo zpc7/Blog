@@ -273,6 +273,10 @@ export default [
             text: 'React中的位运算',
             link: '/interview/framework/react-duyi/React中的位运算'
           },
+          {
+            text: '图解diff算法',
+            link: '/interview/framework/react-duyi/图解diff算法'
+          },
         ]
       },
       {
