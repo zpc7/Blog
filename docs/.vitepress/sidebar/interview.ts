@@ -277,6 +277,10 @@ export default [
             text: '图解diff算法',
             link: '/interview/framework/react-duyi/图解diff算法'
           },
+          {
+            text: 'Hooks原理',
+            link: '/interview/framework/react-duyi/Hooks原理'
+          },
         ]
       },
       {
