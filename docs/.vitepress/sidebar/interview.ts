@@ -176,6 +176,14 @@ export default [
         link: '/interview/browser-network/event-loop'
       },
       {
+        text: '事件循环@渡一袁老师',
+        link: '/interview/browser-network/事件循环'
+      },
+      {
+        text: '浏览器的渲染流程@渡一',
+        link: '/interview/browser-network/浏览器的渲染流程'
+      },
+      {
         text: 'requestIdleCallback / RAF',
         link: '/interview/browser-network/requestIdleCallback-requestAnimationFrame'
       },
