@@ -32,14 +32,15 @@
 
 ### 如何适配
 
-1. 需要分析 小程序运行环境和普通web, h5运行环境上的差异
-2. 添加补丁, eg: 循环轮询的方式, RAF->setTimeout的剑姬
-3. 补充一些全局缺失的环境, 例如 new Image
-4. 处理不同设备 android/ios上 事件的属性兼容
+1. 需要分析小程序运行环境和普通web, h5运行环境上的差异
+2. 添加render渲染器补丁, eg: 循环轮询的方式, window上有的requestAnimationFrame 需要使用setTimeout兜底方案
+3. 补充一些全局缺失的 document webApi, 例如 [new Image](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLImageElement/Image), 使用 小程序 canvas 相关API `createImage` 模拟
+4. 使用Event Bus关联matter-js的事件引擎和uniapp vue模板中的事件, 对接canvas的挂载节点
+5. 处理不同设备 android/ios上 事件的鼠标事件属性兼容/设备像素比兼容 devicePixelRatio, 其他各种的位置运动参数(数学计算), eg: 刚体/约束/向量
 
 #### 步骤1的解释: 小程序与网页开发区别
 
-[原文链接](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/#%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%8E%E6%99%AE%E9%80%9A%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91%E7%9A%84%E5%8C%BA%E5%88%AB)
+[官方 原文链接](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/#%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%8E%E6%99%AE%E9%80%9A%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91%E7%9A%84%E5%8C%BA%E5%88%AB)
 
 小程序的主要开发语言是 JavaScript ，小程序的开发同普通的网页开发相比有很大的相似性。对于前端开发者而言，从网页开发迁移到小程序的开发成本并不高，但是二者还是有些许区别的。
 
@@ -54,7 +55,7 @@
 
 #### 小程序宿主环境, 渲染层和逻辑层
 
-[原文链接](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/framework.html#%E6%B8%B2%E6%9F%93%E5%B1%82%E5%92%8C%E9%80%BB%E8%BE%91%E5%B1%82)
+[官方 原文链接](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/framework.html#%E6%B8%B2%E6%9F%93%E5%B1%82%E5%92%8C%E9%80%BB%E8%BE%91%E5%B1%82)
 小程序的运行环境分成渲染层和逻辑层，其中 WXML 模板和 WXSS 样式工作在渲染层，JS 脚本工作在逻辑层。
 
 小程序的渲染层和逻辑层分别由2个线程管理：渲染层的界面使用了WebView 进行渲染；逻辑层采用JsCore线程运行JS脚本。一个小程序存在多个界面，所以渲染层存在多个WebView线程，这两个线程的通信会经由微信客户端（下文中也会采用Native来代指微信客户端）做中转，逻辑层发送网络请求也经由Native转发，小程序的通信模型下图所示。
@@ -64,7 +65,7 @@
 
 * 借助作用于插槽, 封装类似于useRequest这种的hooks, 减少一些重复变量, 帮助完成请求(代价就是引入一个没有UI渲染的逻辑性组件)
 * 抽象出新的标签 `node` 搭配一些嵌套和属性, 来代替项目中的组件使用, 减少他们的重复引入和状态管理, 原理是使用vue2的`h`函数, 自己创建组件
-* 臭氧出各种的组件
+* 抽样出各种的组件
 
 ### 资料
 
