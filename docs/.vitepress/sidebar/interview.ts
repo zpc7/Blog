@@ -223,8 +223,12 @@ export default [
   },
   {
     text: '框架和库',
-    collapsed: true,
+    collapsed: false,
     items: [
+      {
+        text:'INDEX',
+        link: '/interview/framework/index'
+      },
       {
         text: '⚛️ React',
         items: [
@@ -303,17 +307,17 @@ export default [
             link: '/interview/framework/vue/index'
           },
           {
-            text: 'keep alive',
+            text: 'keep alive 🚧',
             link: '/interview/framework/vue/keep-alive'
           }
         ]
       },
       {
-        text: 'Angular',
+        text: 'Angular 🚧',
         link: '/interview/framework/ng'
       },
       {
-        text: 'MVC/MVVM',
+        text: 'MVC/MVVM 🚧',
         link: '/interview/framework/ng'
       }
     ]
