@@ -431,6 +431,10 @@ export default [
         link: '/interview/interview-examples/lenovo'
       },
       {
+        text: '57',
+        link: '/interview/interview-examples/57'
+      },
+      {
         text: '其他',
         link: '/interview/interview-examples/other'
       },
